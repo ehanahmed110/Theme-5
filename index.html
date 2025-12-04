@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Theme 5</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .show-dropdown {
+        opacity: 1 !important;
+        visibility: visible !important;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- -----------------------Header------------------------- -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="top-mesage-countdown text-center">
+          <span class="free_del_top"
+            ><a href="#" id="re_announcement-bar"
+              >Get 100 AED off your order with code CYBERMONDAY and enjoy 200
+              AED cashback!</a
+            ></span
+          >
+        </div>
+      </div>
+    </div>
+    <!-- ---------------------NavBar---------------------------- -->
+    <nav class="navbar navbar-expand-lg position-relative py-3">
+      <div
+        class="container-fluid d-flex align-items-center justify-content-between"
+      >
+        <!-- Mobile: Toggle Button on Left -->
+        <button class="nav-toggle-btn d-lg-none" id="navToggle">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Mobile: Language Dropdown -->
+        <div class="dropdown language-dropdown order-lg-3">
+          <button class="lang-btn" type="button" data-bs-toggle="dropdown">
+            <img src="https://flagsapi.com/GB/flat/16.png" class="flag-icon" />
+            EN
+          </button>
+
+          <ul class="dropdown-menu lang-menu">
+            <li>
+              <a class="dropdown-item lang-item" href="#">
+                <img
+                  src="https://flagsapi.com/GB/flat/16.png"
+                  class="flag-icon"
+                />
+                EN
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item lang-item" href="#">
+                <img
+                  src="https://flagsapi.com/AE/flat/16.png"
+                  class="flag-icon"
+                />
+                AR
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Logo in Center -->
+        <a class="navbar-img mx-auto" href="#"
+          ><img src="images/navbar-logo.png" alt="Logo"
+        /></a>
+
+        <!-- Desktop Search Bar -->
+        <div class="desktop-search-wrapper order-lg-1 w-100 d-none d-lg-block">
+          <form class="d-flex mx-auto position-relative" role="search">
+            <input
+              class="form-control nav-search"
+              type="search"
+              placeholder="What are you looking for"
+            />
+            <span class="search-icon"><i class="fas fa-search"></i></span>
+          </form>
+        </div>
+
+        <!-- Icons on Right -->
+        <div class="d-flex ms-auto nav-icons order-lg-4">
+          <a href="#"><i class="fas fa-user"></i></a>
+          <a href="#"><i class="fas fa-heart"></i></a>
+          <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+      </div>
+
+      <!-- Mobile: Search Bar at Bottom (Full Width) -->
+      <div class="mobile-search-wrapper d-lg-none w-100 mt-3">
+        <form class="d-flex position-relative" role="search">
+          <input
+            class="form-control nav-search w-100"
+            type="search"
+            placeholder="What are you looking for"
+          />
+          <span class="search-icon"><i class="fas fa-search"></i></span>
+        </form>
+      </div>
+    </nav>
+    <hr class="m-0" />
+    <!-- ----------- main Navbar Links Section ----------- -->
+    <!-- Sidebar for Mobile -->
+    <div class="sidebar" id="navSidebar">
+      <div class="sidebar-header">
+        <h5>Menu</h5>
+        <button class="sidebar-close" id="sidebarClose">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <ul class="sidebar-nav-links">
+        <li class="sidebar-nav-item">
+          <a href="#" class="sidebar-nav-link active">Cyber Monday</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a href="#" class="sidebar-nav-link">Iphones</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a href="#" class="sidebar-nav-link">Samsungs</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a href="#" class="sidebar-nav-link">MacBooks</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a href="#" class="sidebar-nav-link">Laptops</a>
+        </li>
+        <!-- Dropdown Items -->
+        <li class="sidebar-nav-item sidebar-dropdown">
+          <a href="#" class="sidebar-nav-link sidebar-dropdown-toggle"
+            >Ipads <i class="fas fa-chevron-down"></i
+          ></a>
+          <ul class="sidebar-dropdown-menu">
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Best Sellers</a></li>
+            <li><a href="#">Discount Offers</a></li>
+          </ul>
+        </li>
+        <li class="sidebar-nav-item sidebar-dropdown">
+          <a href="#" class="sidebar-nav-link sidebar-dropdown-toggle"
+            >TVs <i class="fas fa-chevron-down"></i
+          ></a>
+          <ul class="sidebar-dropdown-menu">
+            <li><a href="#">Makeup</a></li>
+            <li><a href="#">Skin Care</a></li>
+            <li><a href="#">Fragrance</a></li>
+          </ul>
+        </li>
+        <li class="sidebar-nav-item sidebar-dropdown">
+          <a href="#" class="sidebar-nav-link sidebar-dropdown-toggle"
+            >Accessories and Audio <i class="fas fa-chevron-down"></i
+          ></a>
+          <ul class="sidebar-dropdown-menu">
+            <li><a href="#">Makeup</a></li>
+            <li><a href="#">Skin Care</a></li>
+            <li><a href="#">Fragrance</a></li>
+          </ul>
+        </li>
+        <li class="sidebar-nav-item sidebar-dropdown">
+          <a href="#" class="sidebar-nav-link sidebar-dropdown-toggle"
+            >Apple Watches <i class="fas fa-chevron-down"></i
+          ></a>
+          <ul class="sidebar-dropdown-menu">
+            <li><a href="#">Makeup</a></li>
+            <li><a href="#">Skin Care</a></li>
+            <li><a href="#">Fragrance</a></li>
+          </ul>
+        </li>
+        <li class="sidebar-nav-item sidebar-dropdown">
+          <a href="#" class="sidebar-nav-link sidebar-dropdown-toggle"
+            >For Business <i class="fas fa-chevron-down"></i
+          ></a>
+          <ul class="sidebar-dropdown-menu">
+            <li><a href="#">Makeup</a></li>
+            <li><a href="#">Skin Care</a></li>
+            <li><a href="#">Fragrance</a></li>
+          </ul>
+        </li>
+        <li class="sidebar-nav-item">
+          <a href="#" class="sidebar-nav-link">Revibe Express</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Sidebar Overlay -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Desktop Navigation -->
+    <nav class="main-nav">
+      <ul class="nav-links-container">
+        <li class="nav-item">
+          <a href="#" class="nav-link-custom active">Cyber Monday</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link-custom">Iphones</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link-custom">Samsungs</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link-custom">MacBooks</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link-custom">Laptops</a>
+        </li>
+        <!-- ---------- Dropdown Item 1 ---------- -->
+        <li class="nav-item dropdown-custom">
+          <a href="#" class="nav-link-custom dropdown-toggle-custom">Ipads</a>
+          <ul class="dropdown-menu-custom">
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Best Sellers</a></li>
+            <li><a href="#">Discount Offers</a></li>
+          </ul>
+        </li>
+        <!-- ---------- Dropdown Item 2 ---------- -->
+        <li class="nav-item dropdown-custom">
+          <a href="#" class="nav-link-custom dropdown-toggle-custom">TVs</a>
+          <ul class="dropdown-menu-custom">
+            <li><a href="#">Makeup</a></li>
+            <li><a href="#">Skin Care</a></li>
+            <li><a href="#">Fragrance</a></li>
+          </ul>
+        </li>
+        <!-- ---------- Dropdown Item 3 ---------- -->
+        <li class="nav-item dropdown-custom">
+          <a href="#" class="nav-link-custom dropdown-toggle-custom"
+            >Accessories and Audio</a
+          >
+          <ul class="dropdown-menu-custom">
+            <li><a href="#">Makeup</a></li>
+            <li><a href="#">Skin Care</a></li>
+            <li><a href="#">Fragrance</a></li>
+          </ul>
+        </li>
+        <!-- ---------- Dropdown Item 4 ---------- -->
+        <li class="nav-item dropdown-custom">
+          <a href="#" class="nav-link-custom dropdown-toggle-custom"
+            >Apple Watches</a
+          >
+          <ul class="dropdown-menu-custom">
+            <li><a href="#">Makeup</a></li>
+            <li><a href="#">Skin Care</a></li>
+            <li><a href="#">Fragrance</a></li>
+          </ul>
+        </li>
+        <!-- ---------- Dropdown Item 5 ---------- -->
+        <li class="nav-item dropdown-custom">
+          <a href="#" class="nav-link-custom dropdown-toggle-custom"
+            >For Business</a
+          >
+          <ul class="dropdown-menu-custom">
+            <li><a href="#">Makeup</a></li>
+            <li><a href="#">Skin Care</a></li>
+            <li><a href="#">Fragrance</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link-custom">Revibe Express</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- -------------top banner slider----------------------- -->
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/Top-banner-1.webp" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="images/top-banner-2.webp" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="images/top-banner-3.webp" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- -------------banner-bottom------------------------ -->
+    <div class="custom-banner-wrapper">
+      <div class="container-fluid py-3 bg-banner-botton px-5">
+        <div class="row align-items-center text-center">
+          <div class="col-12 col-lg-6">
+            <div class="d-flex justify-content-between">
+              <div class="col-6 col-lg-4 mb-3 mb-lg-0">
+                <div class="d-flex align-items-center gap-2">
+                  <img
+                    src="images/delivery-icon.svg"
+                    alt="Free Delivery"
+                    class="icon"
+                  />
+                  <h6 class="mb-0">Free Delivery</h6>
+                </div>
+              </div>
+              <div class="col-6 col-lg-4 mb-3 mb-lg-0">
+                <div class="d-flex align-items-center gap-2">
+                  <img
+                    src="images/return-icon.svg"
+                    alt="10 Days To Return"
+                    class="icon"
+                  />
+                  <h6 class="mb-0">10 Days To Return</h6>
+                </div>
+              </div>
+              <div class="col-6 col-lg-4 mb-3 mb-lg-0">
+                <div class="d-flex align-items-center gap-2">
+                  <img
+                    src="images/warranty-icon.svg"
+                    alt="12 Months Warranty"
+                    class="icon"
+                  />
+                  <h6 class="mb-0">12 Months Warranty</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <div class="row">
+              <div class="col-6 col-lg-3 mb-3 mb-lg-0"></div>
+              <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+                <p class="mb-0">Buy Now, Pay Later</p>
+              </div>
+              <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+                <img
+                  src="images/banner-bottom-1.avif"
+                  class="img-fluid-banner"
+                  alt="Trust Image 1"
+                />
+              </div>
+              <div class="col-6 col-lg-3">
+                <img
+                  src="images/banner-bottom-2.avif"
+                  class="img-fluid-banner"
+                  alt="Trust Image 2"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="renewed-section mt-1">
+      <div class="container">
+        <div class="row">
+          <div class="d-flex align-items-center justify-content-center gap-2">
+            <i class="fas fa-exclamation-circle"></i>
+            <p class="">
+              What is <span class="renewd-span">Renewed</span> from Revibe?
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ----------------CERTIFIED RENEWED LAPTOPS Section ------------------ -->
+    <section class="certified-laptops-section">
+      <div class="container-fluid px-5">
+        <div class="row mb-4 align-items-center">
+          <div class="col-8">
+            <h2 class="section-title">CERTIFIED RENEWED LAPTOPS</h2>
+          </div>
+          <div class="col-4 text-end">
+            <a href="#" class="see-all-link">See all</a>
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- Left Banner - col-lg-3 -->
+          <div class="col-12 col-lg-3 mb-4 mb-lg-0">
+            <div class="eco-banner">
+              <h3 class="eco-title">Eco-Friendly Tech. Sustainable.</h3>
+              <button class="eco-btn">Laptops</button>
+              <div class="eco-laptop-image">
+                <img src="images/laptop-eco.webp" alt="Eco Laptop" class="img-fluid">
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Slider - col-lg-9 -->
+          <div class="col-12 col-lg-9 position-relative">
+            <div class="products-slider-wrapper">
+              <!-- Prev Arrow -->
+              <button class="slider-arrow slider-arrow-prev" id="laptopPrev">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+
+              <!-- Products Slider -->
+              <div class="products-slider" id="laptopsSlider">
+                <!-- Product Card 1 -->
+                <div class="product-card">
+                  <div class="product-image-wrapper">
+                    <div class="cyber-monday-badge">
+                      <span class="badge-text">Cyber Monday</span>
+                      <div class="countdown-timer">
+                        <div class="timer-item">
+                          <span class="timer-value">03</span>
+                          <span class="timer-label">Days</span>
+                        </div>
+                        <span class="timer-sep">:</span>
+                        <div class="timer-item">
+                          <span class="timer-value">07</span>
+                          <span class="timer-label">Hrs</span>
+                        </div>
+                        <span class="timer-sep">:</span>
+                        <div class="timer-item">
+                          <span class="timer-value">29</span>
+                          <span class="timer-label">Mins</span>
+                        </div>
+                        <span class="timer-sep">:</span>
+                        <div class="timer-item">
+                          <span class="timer-value">58</span>
+                          <span class="timer-label">Secs</span>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="wishlist-btn">
+                      <i class="far fa-heart"></i>
+                    </button>
+                    <img src="images/laptop1.webp" alt="Dell Latitude 7400" class="product-image">
+                  </div>
+                  <div class="product-details">
+                    <h5 class="product-name">Dell Latitude 7400 Core-i7 8th-Gen</h5>
+                    <p class="product-specs">512 GB SSD - 14" - Intel</p>
+                    <p class="product-price">AED 999</p>
+                  </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="product-card">
+                  <div class="product-image-wrapper">
+                    <div class="cyber-monday-badge">
+                      <span class="badge-text">Cyber Monday</span>
+                      <div class="countdown-timer">
+                        <div class="timer-item">
+                          <span class="timer-value">03</span>
+                          <span class="timer-label">Days</span>
+                        </div>
+                        <span class="timer-sep">:</span>
+                        <div class="timer-item">
+                          <span class="timer-value">07</span>
+                          <span class="timer-label">Hrs</span>
+                        </div>
+                        <span class="timer-sep">:</span>
+                        <div class="timer-item">
+                          <span class="timer-value">29</span>
+                          <span class="timer-label">Mins</span>
+                        </div>
+                        <span class="timer-sep">:</span>
+                        <div class="timer-item">
+                          <span class="timer-value">58</span>
+                          <span class="timer-label">Secs</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="discount-badge">-46% vs new</div>
+                    <button class="wishlist-btn">
+                      <i class="far fa-heart"></i>
+                    </button>
+                    <img src="images/laptop2.webp" alt="Dell Latitude 5590" class="product-image">
+                  </div>
+                  <div class="product-details">
+                    <h5 class="product-name">Dell Latitude 5590 Core i7 - 8th Gen</h5>
+                    <p class="product-specs">512 GB SSD - 15.6" - Intel</p>
+                    <p class="product-price">AED 1,059</p>
+                  </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="product-card">
+                  <div class="product-image-wrapper">
+                    <div class="cyber-monday-badge">
+                      <span class="badge-text">Cyber Monday</span>
+                      <div class="countdown-timer">
+                        <div class="timer-item">
+                          <span class="timer-value">03</span>
+                          <span class="timer-label">Days</span>
+                        </div>
+                        <span class="timer-sep">:</span>
+                        <div class="timer-item">
+                          <span class="timer-value">07</span>
+                          <span class="timer-label">Hrs</span>
+                        </div>
+                        <span class="timer-sep">:</span>
+                        <div class="timer-item">
+                          <span class="timer-value">29</span>
+                          <span class="timer-label">Mins</span>
+                        </div>
+                        <span class="timer-sep">:</span>
+                        <div class="timer-item">
+                          <span class="timer-value">58</span>
+                          <span class="timer-label">Secs</span>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="wishlist-btn">
+                      <i class="far fa-heart"></i>
+                    </button>
+                    <img src="images/laptop3.webp" alt="Lenovo Thinkpad T470s" class="product-image">
+                  </div>
+                  <div class="product-details">
+                    <h5 class="product-name">Lenovo Thinkpad T470s Core i7 - 7th Gen</h5>
+                    <p class="product-specs">256 GB, 512 GB SSD - 14" -...</p>
+                    <p class="product-price">AED 729</p>
+                  </div>
+                </div>
+
+                <!-- Product Card 4 (duplicate for slider effect) -->
+                <div class="product-card">
+                  <div class="product-image-wrapper">
+                    <div class="cyber-monday-badge">
+                      <span class="badge-text">Cyber Monday</span>
+                      <div class="countdown-timer">
+                        <div class="timer-item">
+                          <span class="timer-value">03</span>
+                          <span class="timer-label">Days</span>
+                        </div>
+                        <span class="timer-sep">:</span>
+                        <div class="timer-item">
+                          <span class="timer-value">07</span>
+                          <span class="timer-label">Hrs</span>
+                        </div>
+                        <span class="timer-sep">:</span>
+                        <div class="timer-item">
+                          <span class="timer-value">29</span>
+                          <span class="timer-label">Mins</span>
+                        </div>
+                        <span class="timer-sep">:</span>
+                        <div class="timer-item">
+                          <span class="timer-value">58</span>
+                          <span class="timer-label">Secs</span>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="wishlist-btn">
+                      <i class="far fa-heart"></i>
+                    </button>
+                    <img src="images/laptop1.webp" alt="Dell Latitude 7400" class="product-image">
+                  </div>
+                  <div class="product-details">
+                    <h5 class="product-name">Dell Latitude 7400 Core-i7 8th-Gen</h5>
+                    <p class="product-specs">512 GB SSD - 14" - Intel</p>
+                    <p class="product-price">AED 999</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Next Arrow -->
+              <button class="slider-arrow slider-arrow-next" id="laptopNext">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ----------------shop certified section ------------------ -->
+    <!-- ----------------Verified Devices Section------------------------------ -->
+    <section class="">
+      <div class="container-fluid px-5">
+        <div class="row verified-devices-section">
+          <h2 class="verified-heading text-center">
+            ALL OUR DEVICES ARE ORIGINAL AND VERIFIED BY EXPERTS
+          </h2>
+
+          <div class="row align-items-center">
+            <!-- Left Features -->
+            <div class="col-12 col-lg-4">
+              <div class="verified-feature text-center mb-4">
+                <div class="feature-icon mb-3">
+                  <i class="fas fa-smile"></i>
+                </div>
+                <h5 class="feature-title">Risk Free</h5>
+                <p class="feature-description">
+                  10 days to return in case of any issue
+                </p>
+              </div>
+
+              <div class="verified-feature text-center mb-4">
+                <div class="feature-icon mb-3">
+                  <i class="fas fa-cog"></i>
+                </div>
+                <h5 class="feature-title">Verified Devices- One by One</h5>
+                <p class="feature-description">
+                  50 points quality check on all aspects of the device (screen,
+                  battery, speed, durability...)
+                </p>
+              </div>
+            </div>
+
+            <!-- Center Image -->
+            <div class="col-12 col-lg-4 text-center mb-4 mb-lg-0">
+              <img
+                src="images/mobile-banner_1570x.webp"
+                alt="Verified Devices"
+                class="verified-devices-img"
+              />
+            </div>
+
+            <!-- Right Features -->
+            <div class="col-12 col-lg-4">
+              <div class="verified-feature text-center mb-4">
+                <div class="feature-icon mb-3">
+                  <i class="fas fa-star"></i>
+                </div>
+                <h5 class="feature-title">Only from the best</h5>
+                <p class="feature-description">
+                  Rigorous screening process - Only 1 out of 4 suppliers is
+                  accepted on Revibe.
+                </p>
+              </div>
+
+              <div class="verified-feature text-center mb-4">
+                <div class="feature-icon mb-3">
+                  <i class="fas fa-headset"></i>
+                </div>
+                <h5 class="feature-title">Always here for you</h5>
+                <p class="feature-description">
+                  Proactive customer service to answer and solve any concern
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ------------------top footer ----------------------- -->
+    <div class="custom-banner-wrapper">
+      <div class="container-fluid py-3 bg-banner-botton px-5">
+        <div class="row align-items-center text-center">
+          <div class="col-12 col-lg-6">
+            <div class="d-flex justify-content-between">
+              <div class="col-6 col-lg-4 mb-3 mb-lg-0">
+                <div class="d-flex align-items-center gap-2">
+                  <img
+                    src="images/delivery-icon.svg"
+                    alt="Free Delivery"
+                    class="icon"
+                  />
+                  <h6 class="mb-0">Free Delivery</h6>
+                </div>
+              </div>
+              <div class="col-6 col-lg-4 mb-3 mb-lg-0">
+                <div class="d-flex align-items-center gap-2">
+                  <img
+                    src="images/return-icon.svg"
+                    alt="10 Days To Return"
+                    class="icon"
+                  />
+                  <h6 class="mb-0">10 Days To Return</h6>
+                </div>
+              </div>
+              <div class="col-6 col-lg-4 mb-3 mb-lg-0">
+                <div class="d-flex align-items-center gap-2">
+                  <img
+                    src="images/warranty-icon.svg"
+                    alt="12 Months Warranty"
+                    class="icon"
+                  />
+                  <h6 class="mb-0">12 Months Warranty</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <div class="row">
+              <div class="col-6 col-lg-3 mb-3 mb-lg-0"></div>
+              <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+                <p class="mb-0">Buy Now, Pay Later</p>
+              </div>
+              <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+                <img
+                  src="images/banner-bottom-1.avif"
+                  class="img-fluid-banner"
+                  alt="Trust Image 1"
+                />
+              </div>
+              <div class="col-6 col-lg-3">
+                <img
+                  src="images/banner-bottom-2.avif"
+                  class="img-fluid-banner"
+                  alt="Trust Image 2"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------Footer Sections------------------------------ -->
+    <footer class="new-footer">
+      <div class="container-fluid px-5">
+        <div class="row">
+          <!-- Column 1: Company Info -->
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <div class="footer-logo mb-3">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0695/1737/7855/files/Full_logo_-_white-cropped.svg?v=1725347566"
+                alt="Revibe"
+                class="footer-logo-img"
+              />
+            </div>
+            <p class="footer-company-desc">
+              Revibe Technology FZ-LLC is a registered company, licensed by
+              Dubai Development Authority.
+            </p>
+          </div>
+
+          <!-- Column 2: About Us -->
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <h3 class="footer-column-title">About Us</h3>
+            <ul class="footer-links-list">
+              <li><a href="#">About Revibe</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Our Blog</a></li>
+              <li><a href="#">Become A Seller</a></li>
+              <li><a href="#">Revibe Reviews</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Informations -->
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <h3 class="footer-column-title">Informations</h3>
+            <ul class="footer-links-list">
+              <li><a href="#">Help Center & FAQ</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Legal Policy</a></li>
+            </ul>
+
+            <div class="footer-payment-icons mt-3">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg"
+                alt="Visa"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg"
+                alt="Mastercard"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Apple_Pay_logo.svg"
+                alt="Apple Pay"
+              />
+              <img
+                src="https://cdn.shopify.com/s/files/1/0695/1737/7855/files/tabby-logo-icon.png"
+                alt="Tabby"
+              />
+              <img
+                src="https://cdn.shopify.com/s/files/1/0695/1737/7855/files/tamara-logo-footer.png?v=1695192468"
+                alt="Tamara"
+              />
+              <img
+                src="https://cdn.shopify.com/s/files/1/0695/1737/7855/files/norton-sec-logo.png"
+                alt="Norton"
+              />
+            </div>
+          </div>
+
+          <!-- Column 4: My Account & Contact -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <h3 class="footer-column-title">My Account</h3>
+            <ul class="footer-links-list">
+              <li><a href="#">My Account</a></li>
+              <li><a href="#">Track Your Order</a></li>
+              <li><a href="#">Raise A Claim</a></li>
+              <li><a href="#">Track Your Claim</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3">
+            <a href="#" class="btn-sell-device">Sell your Device</a>
+            <div class="footer-address mt-4">
+              <p class="mb-1">
+                King Salman Bin Abdulaziz Al Saud Street, Dubai Internet City -
+                Dubai - United Arab Emirates
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="footer-contact-section mt-4">
+              <h3 class="footer-column-title">Contact Us</h3>
+              <p class="footer-contact-item">
+                <a href="mailto:contact@revibe.me">contact@revibe.me</a>
+              </p>
+              <p class="footer-contact-item">
+                <a href="tel:+97144597000">+971 4 459 7000</a>
+              </p>
+              <p class="footer-reply-time">(Reply within 1 business day)</p>
+              <p class="footer-hours">Monday to Friday 9:30 am to 5:30 pm</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="footer-contact-section mt-4">
+              <p class="footer-reply-time">(Reply within 1 business day)</p>
+              <p class="footer-hours">Monday to Friday 9:30 am to 5:30 pm</p>
+              <a href="#" class="footer-chat-link">Chat with Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div class="container-fluid px-5">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-6 text-center text-md-start mb-3 mb-md-0">
+              <p class="footer-copyright mb-0">
+                © 2025 Revibe All Rights Reserved
+              </p>
+            </div>
+            <div class="col-12 col-md-6 text-center text-md-end">
+              <div class="footer-social-icons">
+                <div class="social-icon">
+                  <a
+                    href="https://www.facebook.com/RevibeUAE"
+                    target="_blank"
+                    class="social-icon-icon"
+                  >
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </div>
+                <div class="social-icon">
+                  <a
+                    href="https://www.instagram.com/revibe_me/"
+                    target="_blank"
+                    class="social-icon-icon"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.querySelectorAll(".dropdown-toggle-custom").forEach((item) => {
+        item.addEventListener("click", function (e) {
+          e.preventDefault();
+          let menu = this.nextElementSibling;
+          menu.classList.toggle("show-dropdown");
+        });
+      });
+
+      // Sidebar functionality
+      const navToggle = document.getElementById("navToggle");
+      const sidebar = document.getElementById("navSidebar");
+      const sidebarClose = document.getElementById("sidebarClose");
+      const sidebarOverlay = document.getElementById("sidebarOverlay");
+
+      // Open sidebar
+      if (navToggle) {
+        navToggle.addEventListener("click", function () {
+          sidebar.classList.add("active");
+          sidebarOverlay.classList.add("active");
+          document.body.style.overflow = "hidden";
+        });
+      }
+
+      // Close sidebar
+      function closeSidebar() {
+        sidebar.classList.remove("active");
+        sidebarOverlay.classList.remove("active");
+        document.body.style.overflow = "";
+      }
+
+      if (sidebarClose) {
+        sidebarClose.addEventListener("click", closeSidebar);
+      }
+
+      if (sidebarOverlay) {
+        sidebarOverlay.addEventListener("click", closeSidebar);
+      }
+
+      // Sidebar dropdown functionality
+      document
+        .querySelectorAll(".sidebar-dropdown-toggle")
+        .forEach((toggle) => {
+          toggle.addEventListener("click", function (e) {
+            e.preventDefault();
+            const parent = this.parentElement;
+            const isActive = parent.classList.contains("active");
+
+            // Close all other dropdowns
+            document.querySelectorAll(".sidebar-dropdown").forEach((item) => {
+              item.classList.remove("active");
+            });
+
+            // Toggle current dropdown
+            if (!isActive) {
+              parent.classList.add("active");
+            }
+          });
+        });
+
+      // Laptop slider functionality
+      const laptopPrev = document.getElementById("laptopPrev");
+      const laptopNext = document.getElementById("laptopNext");
+      const laptopsSlider = document.getElementById("laptopsSlider");
+
+      if (laptopPrev && laptopsSlider) {
+        laptopPrev.addEventListener("click", function () {
+          laptopsSlider.scrollBy({
+            left: -300,
+            behavior: "smooth",
+          });
+        });
+      }
+
+      if (laptopNext && laptopsSlider) {
+        laptopNext.addEventListener("click", function () {
+          laptopsSlider.scrollBy({
+            left: 300,
+            behavior: "smooth",
+          });
+        });
+      }
+    </script>
+  </body>
+</html>
