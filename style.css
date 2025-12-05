@@ -1102,9 +1102,9 @@ a#re_announcement-bar {
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
-.section-title-revibe{
-  font-size:22px;
-    font-weight: 700;
+.section-title-revibe {
+  font-size: 22px;
+  font-weight: 700;
   color: #1a1a1a;
   margin: 0;
   text-transform: capitalize;
@@ -1169,17 +1169,17 @@ a#re_announcement-bar {
 .eco-laptop-image img {
   max-width: 100%;
   min-height: 450px;
-  border-radius:0px 10px 10px 0px
+  border-radius: 0px 10px 10px 0px;
 }
 
 /* Products Slider */
 .products-slider-wrapper {
   position: relative;
   padding: 50px 0px 20px 10px;
-  background:#f9f9f9;
+  background: #f9f9f9;
 }
-.two-wrapper-color{
-background:#f9f9f9;
+.two-wrapper-color {
+  background: #f9f9f9;
 }
 .products-slider {
   display: flex;
@@ -1204,10 +1204,34 @@ background:#f9f9f9;
   transition: all 0.3s ease;
   flex-shrink: 0;
 }
-
+.product-cards {
+  min-width: 200px;
+  background: white;
+  flex: 0 0 19%;
+  border: 1px solid #e0e0e0;
+  border-radius: 7px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+.product-cards:hover {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  /* transform: translateY(-5px); */
+}
 .product-card:hover {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   transform: translateY(-5px);
+}
+@media (max-width: 991px) {
+  .product-cards {
+    flex: 0 0 75%;
+  }
+}
+
+@media (max-width: 575px) {
+  .product-cards {
+    flex: 0 0 100%;
+  }
 }
 
 .product-image-wrapper {
@@ -1249,7 +1273,6 @@ background:#f9f9f9;
   font-size: 11px;
   font-weight: 600;
   display: block;
-
 }
 .countdown-timer {
   display: flex;
@@ -1711,21 +1734,19 @@ i.fas.fa-thumbs-up.rising-like {
 }
 .video-slider-arrow-prev:hover {
   background: #c026d3;
-
 }
 .video-slider-arrow-next {
   right: -20px;
 }
 .video-slider-arrow-next:hover {
   background: #c026d3;
-
 }
 .video-slider-arrow i {
   font-size: 14px;
   color: #333;
 }
-.video-slider-arrow i:hover{
-  color:white;
+.video-slider-arrow i:hover {
+  color: white;
 }
 /* ===================== NEW FOOTER STYLES ===================== */
 .new-footer {
@@ -2016,5 +2037,418 @@ i.fas.fa-thumbs-up.rising-like {
 
   .testimonial-text {
     font-size: 14px;
+  }
+}
+
+/* ===================== SHOP CATEGORIES SECTION ===================== */
+.shop-categories-section {
+  padding: 40px 0;
+  background: #fff;
+}
+
+.categories-slider-wrapper {
+  position: relative;
+  padding: 10px 0;
+}
+
+.categories-slider {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding: 10px 0;
+}
+
+.categories-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.category-card {
+  min-width: 150px;
+  flex-shrink: 0;
+  background: #f6f6f6;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.category-card:hover {
+  background: #fff;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-1px);
+}
+
+.category-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 15px;
+  background: linear-gradient(135deg, #c82d8c 0%, #a8248a 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 32px;
+}
+
+.category-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+/* ===================== CYBER MONDAY DEAL SECTION ===================== */
+.cyber-monday-deal-section {
+  padding: 40px 0px;
+  background: linear-gradient(135deg, #7c3aed 0%, #a855f7 50%, #c026d3 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.cyber-monday-deal-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 35px,
+    rgba(0, 0, 0, 0.05) 35px,
+    rgba(0, 0, 0, 0.05) 70px
+  );
+  pointer-events: none;
+}
+.cyber-monday-sub-wrappers {
+  display: flex;
+  gap: 20px;
+}
+.cyber-monday-sub-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.cyber-monday-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.cyber-badge-container {
+  margin-bottom: 20px;
+  img {
+    min-width: 140px;
+  }
+}
+
+.cyber-badge-logo {
+  background: white;
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cyber-text {
+  font-size: 20px;
+  font-weight: 700;
+  color: #c026d3;
+  display: block;
+  line-height: 1.1;
+  font-style: italic;
+}
+
+.monday-text {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1a1a;
+  display: block;
+  line-height: 1.1;
+  font-style: italic;
+}
+
+.main-countdown-timer {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.countdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 35px;
+  background: #ffbdde;
+  border-radius: 7px;
+  padding: 5px 0;
+}
+
+.countdown-value {
+  font-size: 18px;
+  font-weight: 600;
+  color: #443f42;
+  line-height: 1;
+}
+
+.countdown-label {
+  font-size: 10px;
+  font-weight: 600;
+  color: #443f42;
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+
+.countdown-colon {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  margin: 0 5px;
+}
+
+.see-all-container {
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.see-all-cyber-link {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 25px;
+  border: 2px solid white;
+  border-radius: 25px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.see-all-cyber-link:hover {
+  background: white;
+  color: #c026d3;
+}
+
+.cyber-products-wrapper {
+  padding: 0 5px;
+}
+
+.cyber-products-slider {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.cyber-products-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.cyber-discount-badge {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  color: #7f19a0;
+  font-size: 15px;
+  font-weight: 700;
+  z-index: 10;
+}
+
+/* ===================== CERTIFIED IPHONES SECTION ===================== */
+.certified-iphones-section {
+  padding: 0px 0 20px 0;
+  background: #fff;
+}
+
+.iphones-promo-banner {
+  // background: linear-gradient(135deg, rgba(216, 70, 239, 0.9), rgba(168, 85, 247, 0.9));
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.iphones-promo-banner img {
+  max-width: 100%;
+  min-height: 450px;
+  border-radius: 0px 10px 10px 0px;
+}
+.promo-overlay {
+  text-align: center;
+  z-index: 2;
+  position: relative;
+}
+
+.promo-title {
+  font-size: 36px;
+  font-weight: 800;
+  color: white;
+  line-height: 1.2;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  margin: 0;
+}
+
+.color-variants {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.color-circle {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #e0e0e0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.color-circle:hover {
+  transform: scale(1.15);
+  border-color: #c82d8c;
+}
+
+.plus-more {
+  font-size: 12px;
+  font-weight: 600;
+  color: #666;
+  padding: 4px 8px;
+  background: #f0f0f0;
+  border-radius: 12px;
+}
+
+.product-countdown {
+  margin-top: 5px;
+}
+
+/* ===================== SLIDER FIXES - SHOW 3 CARDS ===================== */
+@media (min-width: 992px) {
+  .product-card {
+    min-width: calc(33.333% - 14px);
+    max-width: calc(33.333% - 14px);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .product-card {
+    min-width: calc(50% - 10px);
+    max-width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 767px) {
+  .product-card {
+    min-width: 280px;
+  }
+  .category-card {
+    min-width: 130px;
+  }
+  .category-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 26px;
+  }
+  .category-name {
+    font-size: 13px;
+  }
+  .cyber-badge-logo {
+    padding: 10px 20px;
+  }
+  .cyber-text,
+  .monday-text {
+    font-size: 16px;
+  }
+  .main-countdown-timer {
+    padding: 10px 15px;
+    gap: 5px;
+  }
+  .countdown-item {
+    min-width: 45px;
+  }
+  .countdown-value {
+    font-size: 20px;
+  }
+  .countdown-label {
+    font-size: 9px;
+  }
+  .countdown-colon {
+    font-size: 18px;
+  }
+  .promo-title {
+    font-size: 28px;
+  }
+  .iphones-promo-banner {
+    min-height: 350px;
+  }
+}
+
+/* ===================== VIDEO MODAL ===================== */
+.video-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-modal.active {
+  display: flex;
+}
+
+.video-modal-content {
+  position: relative;
+  width: 90%;
+  max-width: 900px;
+  background: #000;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.video-close-btn {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  background: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.video-close-btn:hover {
+  background: #f0f0f0;
+  transform: rotate(90deg);
+}
+
+.video-modal iframe {
+  width: 100%;
+  height: 500px;
+  border: none;
+}
+
+@media (max-width: 767px) {
+  .video-modal iframe {
+    height: 300px;
   }
 }
