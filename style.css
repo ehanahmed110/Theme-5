@@ -2,6 +2,11 @@
   background: #c82d8c;
   color: white;
   padding: 5px 0px 5px 0px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 9999;
 }
 
 a#re_announcement-bar {
@@ -10,7 +15,9 @@ a#re_announcement-bar {
   font-size: 16px;
   font-weight: 600;
 }
-
+p.mb-0.banner-texts.text-white {
+  font-size: 12px;
+}
 /* ===================== NAVBAR STYLES ===================== */
 .navbar-img img {
   height: 40px;
@@ -429,19 +436,14 @@ a#re_announcement-bar {
   gap: 10px;
 }
 
-/* Responsive Custom Banner */
 @media (max-width: 991px) {
   .custom-banner-wrapper .row {
-    gap: 1rem;
+    gap: 0.5rem;
   }
 
   .custom-banner-wrapper .d-flex.justify-content-between {
     flex-wrap: wrap;
     justify-content: center !important;
-  }
-
-  .custom-banner-wrapper .col-6 {
-    flex: 0 0 48%;
   }
 
   .custom-banner-wrapper h6 {
@@ -1180,6 +1182,7 @@ a#re_announcement-bar {
 }
 .two-wrapper-color {
   background: #f9f9f9;
+  border-radius: 10px;
 }
 .products-slider {
   display: flex;
@@ -1224,7 +1227,7 @@ a#re_announcement-bar {
 }
 @media (max-width: 991px) {
   .product-cards {
-    flex: 0 0 75%;
+    flex: 0 0 45%;
   }
 }
 
@@ -1436,7 +1439,7 @@ a#re_announcement-bar {
   }
 
   .products-slider-wrapper {
-    padding: 0 40px;
+    padding: 20px 20px;
   }
 
   .product-card {
@@ -2042,7 +2045,7 @@ i.fas.fa-thumbs-up.rising-like {
 
 /* ===================== SHOP CATEGORIES SECTION ===================== */
 .shop-categories-section {
-  padding: 40px 0;
+  padding: 30px 0 0 0;
   background: #fff;
 }
 
@@ -2268,7 +2271,6 @@ i.fas.fa-thumbs-up.rising-like {
 }
 
 .iphones-promo-banner {
-  // background: linear-gradient(135deg, rgba(216, 70, 239, 0.9), rgba(168, 85, 247, 0.9));
   border-radius: 15px;
   display: flex;
   align-items: center;
@@ -2387,7 +2389,7 @@ i.fas.fa-thumbs-up.rising-like {
     font-size: 28px;
   }
   .iphones-promo-banner {
-    min-height: 350px;
+    min-height: 200px;
   }
 }
 
@@ -2450,5 +2452,304 @@ i.fas.fa-thumbs-up.rising-like {
 @media (max-width: 767px) {
   .video-modal iframe {
     height: 300px;
+  }
+}
+
+/* ==================== PRODUCT CARD STYLES (From products.css) ==================== */
+/* Added to support Recommended and Hot Deals sections on Homepage */
+
+.products-slider .product-grid-card {
+  min-width: 250px;
+  flex-shrink: 0;
+}
+
+/* Individual Product Card */
+.product-grid-card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.product-grid-card:hover {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+}
+
+/* Product Card Image Section */
+.product-card-image-wrapper {
+  position: relative;
+  padding: 20px;
+  background: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+}
+
+.product-card-image-wrapper img {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  transition: opacity 0.3s ease;
+}
+
+/* Cyber Monday Badge with Countdown */
+.product-cyber-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: linear-gradient(135deg, #c026d3 0%, #9333ea 100%);
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: white;
+  z-index: 10;
+}
+
+[dir="rtl"] .product-cyber-badge {
+  left: auto;
+  right: 10px;
+}
+
+.cyber-badge-title {
+  font-size: 11px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.product-card-countdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+}
+
+.countdown-box {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 3px 5px;
+  border-radius: 4px;
+  min-width: 25px;
+  text-align: center;
+}
+
+.countdown-number {
+  font-size: 12px;
+  font-weight: 700;
+  display: block;
+  line-height: 1;
+}
+
+.countdown-label {
+  font-size: 8px;
+  display: block;
+  margin-top: 2px;
+}
+
+.countdown-separator {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* Wishlist Button */
+.product-wishlist-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: white;
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+[dir="rtl"] .product-wishlist-btn {
+  right: auto;
+  left: 10px;
+}
+
+.product-wishlist-btn:hover {
+  background: #c026d3;
+  color: white;
+}
+
+.product-wishlist-btn i {
+  font-size: 16px;
+}
+
+/* Product Card Info Section */
+.product-card-info {
+  padding: 15px;
+}
+
+.product-card-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+  min-height: 40px;
+}
+
+/* Product Card Rating Stars */
+.product-card-rating {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  margin-bottom: 8px;
+}
+
+.product-card-rating i {
+  font-size: 12px;
+  color: #ffa500;
+}
+
+.product-card-rating .far {
+  color: #ddd;
+}
+
+.product-card-specs {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* Product Card Color Variants */
+.product-card-colors {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.product-color-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #e0e0e0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.product-color-dot:hover {
+  transform: scale(1.1);
+  border-color: #c026d3;
+}
+
+.product-color-dot.active {
+  border-color: #c026d3;
+  border-width: 3px;
+}
+
+/* Product Card Price */
+.product-card-price-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-card-price {
+  background: linear-gradient(135deg, #ff85d6 0%, #ff57c3 100%);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.card-discount-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #c026d3;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 5px 10px;
+  border-radius: 5px;
+  z-index: 5;
+}
+
+[dir="rtl"] .card-discount-badge {
+  left: auto;
+  right: 10px;
+}
+@media (max-width: 972px) {
+  .eco-laptop-image img {
+    height: 250px !important;
+    min-height: auto !important;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  .iphones-promo-banner img {
+    height: 250px !important;
+    min-height: auto !important;
+    width: 100%;
+    border-radius: 10px;
+  }
+  .two-wrapper-color {
+    padding: 20px 10px;
+  }
+  .slider-arrow-next {
+    right: -10px;
+  }
+  .animated-likes-banner {
+    display: none !important;
+  }
+}
+.banner-bottom-wrapper {
+  display: flex;
+  justify-content: space-between;
+  background: #f0f0f0 !important;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.banner-bottom-wrapper-1 {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.banner-bottom-wrapper-2 {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.banner-bottom-wrapper-3 {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  img {
+    height: 30px;
+  }
+}
+@media (max-width: 1030px) {
+  .banner-bottom-wrapper-1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .banner-bottom-wrapper-3{
+    width:100%;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 1030px) {
+  .banner-bottom-wrapper-3 p{
+    font-size:14px;
+  }
+   .banner-bottom-wrapper-2 h6{
+    font-size:14px;
   }
 }
