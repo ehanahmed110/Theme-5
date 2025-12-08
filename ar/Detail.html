@@ -1,0 +1,1698 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="lang-ar">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Theme 5</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.rtl.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../responsive-fixes.css" />
+    <link rel="stylesheet" href="../detail.css">
+    <style>
+      .show-dropdown {
+        opacity: 1 !important;
+        visibility: visible !important;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- -----------------------Header------------------------- -->
+    <div class="container-fluid mb-5">
+      <div class="row">
+        <div class="top-mesage-countdown text-center">
+          <span class="free_del_top"
+            ><a href="#" id="re_announcement-bar"
+              >احصل على خصم 100 درهم على طلبك باستخدام كود CYBERMONDAY واستمتع بـ 200 درهم كاش باك!</a
+            ></span
+          >
+        </div>
+      </div>
+    </div>
+    <!-- ---------------------NavBar---------------------------- -->
+    <nav class="navbar navbar-expand-lg position-relative py-3">
+      <div
+        class="container-fluid d-flex align-items-center justify-content-between"
+      >
+        <!-- Mobile: Toggle Button on Left -->
+        <button class="nav-toggle-btn d-lg-none" id="navToggle">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Mobile: Language Dropdown -->
+        <div class="dropdown language-dropdown order-lg-3">
+          <button class="lang-btn" type="button" data-bs-toggle="dropdown">
+            <img src="https://flagsapi.com/AE/flat/16.png" class="flag-icon" />
+            AR
+          </button>
+
+          <ul class="dropdown-menu lang-menu">
+            <li>
+              <a
+                class="dropdown-item lang-item"
+                href="../Detail.html"
+                data-set-lang="en"
+              >
+                <img
+                  src="https://flagsapi.com/GB/flat/16.png"
+                  class="flag-icon"
+                />
+                EN
+              </a>
+            </li>
+            <li>
+              <a
+                class="dropdown-item lang-item"
+                href="Detail.html"
+                data-set-lang="ar"
+              >
+                <img
+                  src="https://flagsapi.com/AE/flat/16.png"
+                  class="flag-icon"
+                />
+                AR
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Logo in Center -->
+        <a class="navbar-img" href="#"
+          ><img src="images/navbar-logo.png" alt="Logo"
+        /></a>
+
+        <!-- Desktop Search Bar -->
+        <div class="desktop-search-wrapper order-lg-1 w-100 d-none d-lg-block">
+          <form class="d-flex mx-auto position-relative" role="search">
+            <input
+              class="form-control nav-search"
+              type="search"
+              placeholder="ما الذي تبحث عنه"
+            />
+            <span class="search-icon"><i class="fas fa-search"></i></span>
+          </form>
+        </div>
+
+        <!-- Icons on Right -->
+        <div class="d-flex ms-auto nav-icons order-lg-4">
+          <a href="#"><i class="fas fa-user"></i></a>
+          <a href="#"><i class="fas fa-heart"></i></a>
+          <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+      </div>
+
+      <!-- Mobile: Search Bar at Bottom (Full Width) -->
+      <div class="mobile-search-wrapper d-lg-none w-100 mt-3">
+        <form class="d-flex position-relative" role="search">
+          <input
+            class="form-control nav-search w-100"
+            type="search"
+            placeholder="ما الذي تبحث عنه"
+          />
+          <span class="search-icon"><i class="fas fa-search"></i></span>
+        </form>
+      </div>
+    </nav>
+    <hr class="m-0" />
+    <!-- ----------- main Navbar Links Section ----------- -->
+    <!-- Sidebar for Mobile -->
+    <div class="sidebar" id="navSidebar">
+      <div class="sidebar-header">
+        <h5>القائمة</h5>
+        <button class="sidebar-close" id="sidebarClose">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <ul class="sidebar-nav-links">
+        <li class="sidebar-nav-item">
+          <a href="#" class="sidebar-nav-link active">سايبر مانداي</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a href="iphone.html" class="sidebar-nav-link">آيفون</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a href="samsung.html" class="sidebar-nav-link">سامسونج</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a href="macbook.html" class="sidebar-nav-link">ماك بوك</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a href="laptop.html" class="sidebar-nav-link">لابتوب</a>
+        </li>
+        <!-- Dropdown Items -->
+        <li class="sidebar-nav-item sidebar-dropdown">
+          <a href="ipad.html" class="sidebar-nav-link sidebar-dropdown-toggle"
+            >آيباد <i class="fas fa-chevron-down"></i
+          ></a>
+          <ul class="sidebar-dropdown-menu">
+            <li><a href="#">وصل حديثاً</a></li>
+            <li><a href="#">الأكثر مبيعاً</a></li>
+            <li><a href="#">عروض الخصم</a></li>
+          </ul>
+        </li>
+        <li class="sidebar-nav-item sidebar-dropdown">
+          <a href="tv.html" class="sidebar-nav-link sidebar-dropdown-toggle"
+            >تلفزيونات <i class="fas fa-chevron-down"></i
+          ></a>
+          <ul class="sidebar-dropdown-menu">
+            <li><a href="#">مكياج</a></li>
+            <li><a href="#">العناية بالبشرة</a></li>
+            <li><a href="#">عطور</a></li>
+          </ul>
+        </li>
+        <li class="sidebar-nav-item sidebar-dropdown">
+          <a
+            href="accessiories.html"
+            class="sidebar-nav-link sidebar-dropdown-toggle"
+            >إكسسوارات وصوتيات <i class="fas fa-chevron-down"></i
+          ></a>
+          <ul class="sidebar-dropdown-menu">
+            <li><a href="#">مكياج</a></li>
+            <li><a href="#">العناية بالبشرة</a></li>
+            <li><a href="#">عطور</a></li>
+          </ul>
+        </li>
+        <li class="sidebar-nav-item sidebar-dropdown">
+          <a
+            href="apple-watch.html"
+            class="sidebar-nav-link sidebar-dropdown-toggle"
+            >ساعات آبل <i class="fas fa-chevron-down"></i
+          ></a>
+          <ul class="sidebar-dropdown-menu">
+            <li><a href="#">مكياج</a></li>
+            <li><a href="#">العناية بالبشرة</a></li>
+            <li><a href="#">عطور</a></li>
+          </ul>
+        </li>
+        <li class="sidebar-nav-item sidebar-dropdown">
+          <a href="#" class="sidebar-nav-link sidebar-dropdown-toggle"
+            >للأعمال <i class="fas fa-chevron-down"></i
+          ></a>
+          <ul class="sidebar-dropdown-menu">
+            <li><a href="#">مكياج</a></li>
+            <li><a href="#">العناية بالبشرة</a></li>
+            <li><a href="#">عطور</a></li>
+          </ul>
+        </li>
+        <li class="sidebar-nav-item">
+          <a href="#" class="sidebar-nav-link">ريفايب إكسبرس</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Sidebar Overlay -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Desktop Navigation -->
+    <nav class="main-nav">
+      <ul class="nav-links-container">
+        <li class="nav-item">
+          <a href="#" class="nav-link-custom active">سايبر مانداي</a>
+        </li>
+        <li class="nav-item">
+          <a href="iphone.html" class="nav-link-custom">آيفون</a>
+        </li>
+        <li class="nav-item">
+          <a href="samsung.html" class="nav-link-custom">سامسونج</a>
+        </li>
+        <li class="nav-item">
+          <a href="macbook.html" class="nav-link-custom">ماك بوك</a>
+        </li>
+        <li class="nav-item">
+          <a href="laptop.html" class="nav-link-custom">لابتوب</a>
+        </li>
+        <!-- ---------- Dropdown Item 1 ---------- -->
+        <li class="nav-item dropdown-custom">
+          <a href="ipad.html" class="nav-link-custom dropdown-toggle-custom"
+            >آيباد</a
+          >
+          <ul class="dropdown-menu-custom">
+            <li><a href="ipad.html">وصل حديثاً</a></li>
+            <li><a href="ipad.html">الأكثر مبيعاً</a></li>
+            <li><a href="ipad.html">عروض الخصم</a></li>
+          </ul>
+        </li>
+        <!-- ---------- Dropdown Item 2 ---------- -->
+        <li class="nav-item dropdown-custom">
+          <a href="tv.html" class="nav-link-custom dropdown-toggle-custom"
+            >تلفزيونات</a
+          >
+          <ul class="dropdown-menu-custom">
+            <li><a href="tv.html">مكياج</a></li>
+            <li><a href="tv.html">العناية بالبشرة</a></li>
+            <li><a href="tv.html">عطور</a></li>
+          </ul>
+        </li>
+        <!-- ---------- Dropdown Item 3 ---------- -->
+        <li class="nav-item dropdown-custom">
+          <a
+            href="accessiories.html"
+            class="nav-link-custom dropdown-toggle-custom"
+            >إكسسوارات وصوتيات</a
+          >
+          <ul class="dropdown-menu-custom">
+            <li><a href="accessiories.html">مكياج</a></li>
+            <li><a href="accessiories.html">العناية بالبشرة</a></li>
+            <li><a href="accessiories.html">عطور</a></li>
+          </ul>
+        </li>
+        <!-- ---------- Dropdown Item 4 ---------- -->
+        <li class="nav-item dropdown-custom">
+          <a
+            href="apple-watch.html"
+            class="nav-link-custom dropdown-toggle-custom"
+            >ساعات آبل</a
+          >
+          <ul class="dropdown-menu-custom">
+            <li><a href="apple-watch.html">مكياج</a></li>
+            <li><a href="apple-watch.html">العناية بالبشرة</a></li>
+            <li><a href="apple-watch.html">عطور</a></li>
+          </ul>
+        </li>
+        <!-- ---------- Dropdown Item 5 ---------- -->
+        <li class="nav-item dropdown-custom">
+          <a href="#" class="nav-link-custom dropdown-toggle-custom"
+            >للأعمال</a
+          >
+          <ul class="dropdown-menu-custom">
+            <li><a href="#">مكياج</a></li>
+            <li><a href="#">العناية بالبشرة</a></li>
+            <li><a href="#">عطور</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link-custom">ريفايب إكسبرس</a>
+        </li>
+      </ul>
+    </nav>
+
+
+
+
+
+
+
+<!-- ----------------------- Product Detail Section ----------------------- -->
+<section class="product-detail-section">
+  <div class="product-detail-container">
+    <div class="product-detail-row">
+
+      <!-- Left Column: Gallery -->
+      <div class="product-gallery">
+        <div class="gallery-main-image-wrapper">
+          <img
+            id="mainImage"
+            src="images/ugreen-nexode-100w-usb-c-gan-charger-4-port-wall-charger-662367_570x.webp"
+            alt="UGREEN Charger"
+            class="gallery-main-image"
+          />
+
+          <div class="trust-badge-overlay">
+            <img
+              src="../images/Checked_Black_1.webp"
+              alt="Expertly Checked"
+              style="width: 100%; height: 100%"
+            />
+          </div>
+
+          <div class="gallery-thumbnails">
+            <img
+              src="images/ugreen-nexode-100w-usb-c-gan-charger-662367_570x.webp"
+              class="thumb active"
+              onclick="changeImage(this.src)"
+            />
+            <img
+              src="images/51n23w2VY3L._AC_SL1500_1160x.webp"
+              class="thumb"
+              onclick="changeImage(this.src)"
+            />
+            <img
+              src="images/51Wp-rI5XKL._AC_SL1500_1170x.webp"
+              class="thumb"
+              onclick="changeImage(this.src)"
+            />
+          </div>
+        </div>
+
+        <div class="trust-icons-row">
+          <strong>150,000+</strong> عملاء | ممتاز
+          <div class="trustpilot-widget">
+            <span style="background:#00b67a;color:white;padding:2px 5px;font-weight:bold">★★★★★</span>
+            <strong>Trustpilot</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Product Info -->
+      <div class="product-info">
+        <div class="product-info-1">
+
+          <h4 class="product-title">شاحن UGREEN 30W PD سريع UK</h4>
+
+          <div class="product-price-section">
+            <span class="current-price">79 درهم</span>
+
+            <div class="delivery-info">
+              <img src="images/delivery-icon.svg" width="20" class="delivery-icon" />
+
+              <div>
+                <strong>توصيل مجاني</strong><br />
+                <span style="font-size: 11px; color: #666">9 - 11 ديسمبر</span>
+              </div>
+
+              <a href="#">
+                <i class="fas fa-heart ms-3" style="color:#333; font-size:18px"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="attribute-section-1">
+
+          <div class="attribute-section">
+            <span class="attribute-label">اللون: أبيض</span>
+
+            <div class="color-options">
+              <div
+                class="color-option selected"
+                style="background-color: white"
+                onclick="selectColor(this, 'White')"
+              ></div>
+            </div>
+          </div>
+
+          <div class="attribute-section">
+            <span class="attribute-label">الحالة: جديد</span>
+
+            <div class="condition-options">
+              <div class="condition-btn selected" onclick="selectCondition(this)">
+                جديد
+                <span class="condition-price">79 درهم</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="payment-installments">
+            <div class="pay-later-text">
+              تسوق الآن وادفع لاحقاً!
+              <i class="fas fa-chevron-down" style="font-size: 12px"></i>
+            </div>
+
+            <div class="payment-logos">
+              <img src="https://cdn.shopify.com/s/files/1/0695/1737/7855/files/tabby-logo-icon.png"
+                   class="payment-badge" alt="Tabby" />
+              <img src="https://cdn.shopify.com/s/files/1/0695/1737/7855/files/tamara-logo-footer.png?v=1695192468"
+                   class="payment-badge" alt="Tamara" />
+            </div>
+          </div>
+
+          <div class="cashback-banner">
+            <div class="d-flex align-items-center gap-2">
+              <img src="https://cdn-icons-png.flaticon.com/512/2620/2620310.png" width="30" />
+              <span class="cashback-text">استرداد نقدي 100 درهم</span>
+            </div>
+
+            <img src="images/banner-bottom-1.avif" width="40" style="border-radius: 50%" />
+          </div>
+
+          <button class="add-to-cart-btn">أضف إلى السلة</button>
+
+        </div>
+
+        <div class="accordion" id="productAccordion">
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTech"
+              >
+                المواصفات الفنية
+              </button>
+            </h2>
+
+            <div id="collapseTech" class="accordion-collapse collapse" data-bs-parent="#productAccordion">
+              <div class="accordion-body">
+                Input: 100-240V~50/60Hz 800mA Max<br />
+                Output: 5V/3A 9V/3A 12V/2.5A 15V/2A 20V/1.5A 30W Max
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFAQ"
+              >
+                الأسئلة الشائعة
+              </button>
+            </h2>
+
+            <div id="collapseFAQ" class="accordion-collapse collapse" data-bs-parent="#productAccordion">
+              <div class="accordion-body">الأسئلة والأجوبة هنا.</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sticky Bottom Bar -->
+<div class="sticky-bottom-bar" id="stickyBottomBar">
+  <div class="sticky-product-info">
+    <h5>شاحن UGREEN 30W PD سريع UK</h5>
+    <span>أبيض / جديد</span>
+  </div>
+
+  <div class="sticky-actions">
+    <span class="sticky-price">79 درهم</span>
+    <button class="sticky-btn">أضف إلى السلة</button>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ----------------قسم موصى به لك ------------------ -->
+    <section class="shop-categories-section mb-5">
+      <div class="container-fluid px-5">
+        <div class="row align-items-center mb-4">
+          <div class="col-8">
+            <h2 class="section-title">موصى به لك</h2>
+          </div>
+          <div class="col-4 text-end">
+            <a href="#" class="see-all-link">عرض الكل</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 position-relative">
+            <div
+              class="products-slider-wrapper"
+              style="background: transparent; padding: 0"
+            >
+              <button
+                class="slider-arrow slider-arrow-prev"
+                id="recommendedPrev"
+              >
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <div class="products-slider" id="recommendedSlider">
+                <!-- Card 1 -->
+                <div
+                  class="product-grid-card"
+                  data-colors="black,gold,blue"
+                  data-storage="128"
+                >
+                  <div class="product-card-image-wrapper">
+                    <div class="card-discount-badge">-50% مقارنة بالجديد</div>
+                    <button class="product-wishlist-btn">
+                      <i class="far fa-heart"></i>
+                    </button>
+                    <img
+                      src="images/Graphite_629e9294-dbcf-4cf3-91bf-adc01ce26acf_300x.avif"
+                      alt="iPhone 13 Pro Max"
+                      class="product-main-image"
+                    />
+                  </div>
+                  <div class="product-card-info">
+                    <h3 class="product-card-title">iPhone 13 Pro Max</h3>
+                    <div class="product-card-colors">
+                      <div
+                        class="product-color-dot active"
+                        style="background: #505d68"
+                        data-image="images/Graphite_629e9294-dbcf-4cf3-91bf-adc01ce26acf_300x.avif"
+                      ></div>
+                      <div
+                        class="product-color-dot"
+                        style="background: #fae7cf"
+                        data-image="images/Gold_99213c56-30db-415e-98ee-2fac8248e1d9_300x.avif"
+                      ></div>
+                      <div
+                        class="product-color-dot"
+                        style="background: #a7c1d9"
+                        data-image="images/PacificBlue_2af99c82-a9fa-4c2a-8d6e-95b0d4fb7c7d_300x.avif"
+                      ></div>
+                      <div
+                        class="product-color-dot"
+                        style="background: #e3e4e5"
+                        data-image="images/Silver_308d2c03-3c87-43a4-be1a-da17c20d8738_300x.avif"
+                      ></div>
+                    </div>
+                    <div class="product-card-price-wrapper">
+                      <div class="product-card-price">AED 1,739</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="product-grid-card">
+                  <div class="product-card-image-wrapper">
+                    <button class="product-wishlist-btn">
+                      <i class="far fa-heart"></i>
+                    </button>
+                    <img
+                      src="images/Gold_99213c56-30db-415e-98ee-2fac8248e1d9_300x.avif"
+                      alt="UGREEN 30W PD Fast Charger UK"
+                      class="product-main-image"
+                      onerror="this.src='images/top-banner-2.webp'"
+                    />
+                  </div>
+                  <div class="product-card-info">
+                    <h3 class="product-card-title">شاحن يو جرين سريع 30 واط</h3>
+                    <div class="product-card-colors">
+                      <div
+                        class="product-color-dot active"
+                        style="background: #fff; border: 1px solid #ddd"
+                        data-image="images/ugreen-30w_300x.jpg"
+                      ></div>
+                    </div>
+                    <div class="product-card-price-wrapper">
+                      <div class="product-card-price">AED 79</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 3 -->
+                <div
+                  class="product-grid-card"
+                  data-colors="black,gold,blue"
+                  data-storage="128"
+                >
+                  <div class="product-card-image-wrapper">
+                    <div class="card-discount-badge">-52% مقارنة بالجديد</div>
+                    <button class="product-wishlist-btn">
+                      <i class="far fa-heart"></i>
+                    </button>
+                    <img
+                      src="images/PacificBlue_2af99c82-a9fa-4c2a-8d6e-95b0d4fb7c7d_300x.avif"
+                      alt="iPhone 12 Pro"
+                      class="product-main-image"
+                    />
+                  </div>
+                  <div class="product-card-info">
+                    <h3 class="product-card-title">iPhone 12 Pro</h3>
+                    <div class="product-card-colors">
+                      <div
+                        class="product-color-dot active"
+                        style="background: #3e7ca8"
+                        data-image="images/PacificBlue_2af99c82-a9fa-4c2a-8d6e-95b0d4fb7c7d_300x.avif"
+                      ></div>
+                      <div
+                        class="product-color-dot"
+                        style="background: #505d68"
+                        data-image="images/Graphite_629e9294-dbcf-4cf3-91bf-adc01ce26acf_300x.avif"
+                      ></div>
+                      <div
+                        class="product-color-dot"
+                        style="background: #fae7cf"
+                        data-image="images/Gold_99213c56-30db-415e-98ee-2fac8248e1d9_300x.avif"
+                      ></div>
+                      <div
+                        class="product-color-dot"
+                        style="background: #e3e4e5"
+                        data-image="images/Silver_308d2c03-3c87-43a4-be1a-da17c20d8738_300x.avif"
+                      ></div>
+                    </div>
+                    <div class="product-card-price-wrapper">
+                      <div class="product-card-price">AED 1,099</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="product-grid-card">
+                  <div class="product-card-image-wrapper">
+                    <button class="product-wishlist-btn">
+                      <i class="far fa-heart"></i>
+                    </button>
+                    <img
+                      src="images/Graphite_629e9294-dbcf-4cf3-91bf-adc01ce26acf_300x.avif"
+                      alt="Case iPhone 13 Pro Max Black"
+                      class="product-main-image"
+                    />
+                  </div>
+                  <div class="product-card-info">
+                    <h3 class="product-card-title">
+                      غطاء آيفون 13 برو ماكس أسود
+                    </h3>
+                    <div class="product-card-price-wrapper">
+                      <div class="product-card-price">AED 29</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 5 -->
+                <div
+                  class="product-grid-card"
+                  data-colors="black,gold,blue"
+                  data-storage="128"
+                >
+                  <div class="product-card-image-wrapper">
+                    <div class="card-discount-badge">-42% مقارنة بالجديد</div>
+                    <button class="product-wishlist-btn">
+                      <i class="far fa-heart"></i>
+                    </button>
+                    <img
+                      src="images/Graphite_629e9294-dbcf-4cf3-91bf-adc01ce26acf_300x.avif"
+                      alt="iPhone 13 Pro"
+                      class="product-main-image"
+                    />
+                  </div>
+                  <div class="product-card-info">
+                    <h3 class="product-card-title">iPhone 13 Pro</h3>
+                    <div class="product-card-colors">
+                      <div
+                        class="product-color-dot active"
+                        style="background: #505d68"
+                        data-image="images/Graphite_629e9294-dbcf-4cf3-91bf-adc01ce26acf_300x.avif"
+                      ></div>
+                      <div
+                        class="product-color-dot"
+                        style="background: #fae7cf"
+                        data-image="images/Gold_99213c56-30db-415e-98ee-2fac8248e1d9_300x.avif"
+                      ></div>
+                      <div
+                        class="product-color-dot"
+                        style="background: #a7c1d9"
+                        data-image="images/PacificBlue_2af99c82-a9fa-4c2a-8d6e-95b0d4fb7c7d_300x.avif"
+                      ></div>
+                      <div
+                        class="product-color-dot"
+                        style="background: #e3e4e5"
+                        data-image="images/Silver_308d2c03-3c87-43a4-be1a-da17c20d8738_300x.avif"
+                      ></div>
+                    </div>
+                    <div class="product-card-price-wrapper">
+                      <div class="product-card-price">AED 1,459</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="slider-arrow slider-arrow-next"
+                id="recommendedNext"
+              >
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------قسم عروض مميزة ------------------ -->
+    <section class="shop-categories-section mb-5">
+      <div class="container-fluid px-5">
+        <div class="row align-items-center mb-4">
+          <div class="col-8">
+            <h2 class="section-title">عروض مميزة</h2>
+          </div>
+          <div class="col-4 text-end">
+            <a href="#" class="see-all-link">عرض الكل</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 position-relative">
+            <div
+              class="products-slider-wrapper"
+              style="background: transparent; padding: 0"
+            >
+              <button class="slider-arrow slider-arrow-prev" id="hotDealsPrev">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <div class="products-slider" id="hotDealsSlider">
+                <!-- Reuse some cards for demo -->
+                <!-- Card 1 -->
+                <div
+                  class="product-grid-card"
+                  data-colors="black,gold,blue"
+                  data-storage="128"
+                >
+                  <div class="product-card-image-wrapper">
+                    <div class="card-discount-badge">-50% مقارنة بالجديد</div>
+                    <button class="product-wishlist-btn">
+                      <i class="far fa-heart"></i>
+                    </button>
+                    <img
+                      src="images/Graphite_629e9294-dbcf-4cf3-91bf-adc01ce26acf_300x.avif"
+                      alt="iPhone 13 Pro Max"
+                      class="product-main-image"
+                    />
+                  </div>
+                  <div class="product-card-info">
+                    <h3 class="product-card-title">iPhone 13 Pro Max</h3>
+                    <div class="product-card-colors">
+                      <div
+                        class="product-color-dot active"
+                        style="background: #505d68"
+                        data-image="images/Graphite_629e9294-dbcf-4cf3-91bf-adc01ce26acf_300x.avif"
+                      ></div>
+                      <div
+                        class="product-color-dot"
+                        style="background: #fae7cf"
+                        data-image="images/Gold_99213c56-30db-415e-98ee-2fac8248e1d9_300x.avif"
+                      ></div>
+                      <div
+                        class="product-color-dot"
+                        style="background: #a7c1d9"
+                        data-image="images/PacificBlue_2af99c82-a9fa-4c2a-8d6e-95b0d4fb7c7d_300x.avif"
+                      ></div>
+                      <div
+                        class="product-color-dot"
+                        style="background: #e3e4e5"
+                        data-image="images/Silver_308d2c03-3c87-43a4-be1a-da17c20d8738_300x.avif"
+                      ></div>
+                    </div>
+                    <div class="product-card-price-wrapper">
+                      <div class="product-card-price">AED 1,739</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 3 -->
+                <div
+                  class="product-grid-card"
+                  data-colors="black,gold,blue"
+                  data-storage="128"
+                >
+                  <div class="product-card-image-wrapper">
+                    <div class="card-discount-badge">-52% مقارنة بالجديد</div>
+                    <button class="product-wishlist-btn">
+                      <i class="far fa-heart"></i>
+                    </button>
+                    <img
+                      src="images/PacificBlue_2af99c82-a9fa-4c2a-8d6e-95b0d4fb7c7d_300x.avif"
+                      alt="iPhone 12 Pro"
+                      class="product-main-image"
+                    />
+                  </div>
+                  <div class="product-card-info">
+                    <h3 class="product-card-title">iPhone 12 Pro</h3>
+                    <div class="product-card-colors">
+                      <div
+                        class="product-color-dot active"
+                        style="background: #3e7ca8"
+                        data-image="images/PacificBlue_2af99c82-a9fa-4c2a-8d6e-95b0d4fb7c7d_300x.avif"
+                      ></div>
+                      <div
+                        class="product-color-dot"
+                        style="background: #505d68"
+                        data-image="images/Graphite_629e9294-dbcf-4cf3-91bf-adc01ce26acf_300x.avif"
+                      ></div>
+                      <div
+                        class="product-color-dot"
+                        style="background: #fae7cf"
+                        data-image="images/Gold_99213c56-30db-415e-98ee-2fac8248e1d9_300x.avif"
+                      ></div>
+                      <div
+                        class="product-color-dot"
+                        style="background: #e3e4e5"
+                        data-image="images/Silver_308d2c03-3c87-43a4-be1a-da17c20d8738_300x.avif"
+                      ></div>
+                    </div>
+                    <div class="product-card-price-wrapper">
+                      <div class="product-card-price">AED 1,099</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 5 -->
+                <div
+                  class="product-grid-card"
+                  data-colors="black,gold,blue"
+                  data-storage="128"
+                >
+                  <div class="product-card-image-wrapper">
+                    <div class="card-discount-badge">-42% مقارنة بالجديد</div>
+                    <button class="product-wishlist-btn">
+                      <i class="far fa-heart"></i>
+                    </button>
+                    <img
+                      src="images/Graphite_629e9294-dbcf-4cf3-91bf-adc01ce26acf_300x.avif"
+                      alt="iPhone 13 Pro"
+                      class="product-main-image"
+                    />
+                  </div>
+                  <div class="product-card-info">
+                    <h3 class="product-card-title">iPhone 13 Pro</h3>
+                    <div class="product-card-colors">
+                      <div
+                        class="product-color-dot active"
+                        style="background: #505d68"
+                        data-image="images/Graphite_629e9294-dbcf-4cf3-91bf-adc01ce26acf_300x.avif"
+                      ></div>
+                      <div
+                        class="product-color-dot"
+                        style="background: #fae7cf"
+                        data-image="images/Gold_99213c56-30db-415e-98ee-2fac8248e1d9_300x.avif"
+                      ></div>
+                      <div
+                        class="product-color-dot"
+                        style="background: #a7c1d9"
+                        data-image="images/PacificBlue_2af99c82-a9fa-4c2a-8d6e-95b0d4fb7c7d_300x.avif"
+                      ></div>
+                      <div
+                        class="product-color-dot"
+                        style="background: #e3e4e5"
+                        data-image="images/Silver_308d2c03-3c87-43a4-be1a-da17c20d8738_300x.avif"
+                      ></div>
+                    </div>
+                    <div class="product-card-price-wrapper">
+                      <div class="product-card-price">AED 1,459</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 1 -->
+                <div
+                  class="product-grid-card"
+                  data-colors="black,gold,blue"
+                  data-storage="128"
+                >
+                  <div class="product-card-image-wrapper">
+                    <div class="card-discount-badge">-50% مقارنة بالجديد</div>
+                    <button class="product-wishlist-btn">
+                      <i class="far fa-heart"></i>
+                    </button>
+                    <img
+                      src="images/Graphite_629e9294-dbcf-4cf3-91bf-adc01ce26acf_300x.avif"
+                      alt="iPhone 13 Pro Max"
+                      class="product-main-image"
+                    />
+                  </div>
+                  <div class="product-card-info">
+                    <h3 class="product-card-title">iPhone 13 Pro Max</h3>
+                    <div class="product-card-colors">
+                      <div
+                        class="product-color-dot active"
+                        style="background: #505d68"
+                        data-image="images/Graphite_629e9294-dbcf-4cf3-91bf-adc01ce26acf_300x.avif"
+                      ></div>
+                      <div
+                        class="product-color-dot"
+                        style="background: #fae7cf"
+                        data-image="images/Gold_99213c56-30db-415e-98ee-2fac8248e1d9_300x.avif"
+                      ></div>
+                      <div
+                        class="product-color-dot"
+                        style="background: #a7c1d9"
+                        data-image="images/PacificBlue_2af99c82-a9fa-4c2a-8d6e-95b0d4fb7c7d_300x.avif"
+                      ></div>
+                      <div
+                        class="product-color-dot"
+                        style="background: #e3e4e5"
+                        data-image="images/Silver_308d2c03-3c87-43a4-be1a-da17c20d8738_300x.avif"
+                      ></div>
+                    </div>
+                    <div class="product-card-price-wrapper">
+                      <div class="product-card-price">AED 1,739</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 3 -->
+                <div
+                  class="product-grid-card"
+                  data-colors="black,gold,blue"
+                  data-storage="128"
+                >
+                  <div class="product-card-image-wrapper">
+                    <div class="card-discount-badge">-52% مقارنة بالجديد</div>
+                    <button class="product-wishlist-btn">
+                      <i class="far fa-heart"></i>
+                    </button>
+                    <img
+                      src="images/PacificBlue_2af99c82-a9fa-4c2a-8d6e-95b0d4fb7c7d_300x.avif"
+                      alt="iPhone 12 Pro"
+                      class="product-main-image"
+                    />
+                  </div>
+                  <div class="product-card-info">
+                    <h3 class="product-card-title">iPhone 12 Pro</h3>
+                    <div class="product-card-colors">
+                      <div
+                        class="product-color-dot active"
+                        style="background: #3e7ca8"
+                        data-image="images/PacificBlue_2af99c82-a9fa-4c2a-8d6e-95b0d4fb7c7d_300x.avif"
+                      ></div>
+                      <div
+                        class="product-color-dot"
+                        style="background: #505d68"
+                        data-image="images/Graphite_629e9294-dbcf-4cf3-91bf-adc01ce26acf_300x.avif"
+                      ></div>
+                      <div
+                        class="product-color-dot"
+                        style="background: #fae7cf"
+                        data-image="images/Gold_99213c56-30db-415e-98ee-2fac8248e1d9_300x.avif"
+                      ></div>
+                      <div
+                        class="product-color-dot"
+                        style="background: #e3e4e5"
+                        data-image="images/Silver_308d2c03-3c87-43a4-be1a-da17c20d8738_300x.avif"
+                      ></div>
+                    </div>
+                    <div class="product-card-price-wrapper">
+                      <div class="product-card-price">AED 1,099</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="slider-arrow slider-arrow-next" id="hotDealsNext">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ----------------Press/Media Testimonials Section------------------------------ -->
+    <section class="press-testimonials-section">
+      <div class="container">
+        <div class="testimonials-slider-wrapper">
+          <div class="testimonials-slider" id="testimonialsSlider">
+            <!-- Slide 1 -->
+            <div class="testimonial-slide">
+              <div class="company-logo">
+                <h2 class="logo-text-elegant">Khaleej Times</h2>
+              </div>
+              <p class="testimonial-text">
+                ريفايب تجعل التجربة خالية من المخاطر والمتاعب، لراحة عملائها.
+              </p>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="testimonial-slide">
+              <div class="company-logo">
+                <h2 class="logo-text">
+                  Gulf <span class="highlight">Today</span>
+                </h2>
+              </div>
+              <p class="testimonial-text">
+                ريفايب هو الحل الأمثل لشراء الأجهزة المستعملة بثقة وأمان.
+              </p>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="testimonial-slide">
+              <div class="company-logo">
+                <h2 class="logo-text-elegant">Khaleej Times</h2>
+              </div>
+              <p class="testimonial-text">
+                ريفايب هي المنصة الأكثر موثوقية لشراء الإلكترونيات المستعملة في الخليج.
+              </p>
+            </div>
+
+            <!-- Slide 4 (New Testimonial) -->
+            <div class="testimonial-slide">
+              <div class="company-logo">
+                <h2 class="logo-text">The National</h2>
+              </div>
+              <p class="testimonial-text">
+                تقدم ريفايب منصة فريدة وموثوقة لشراء الإلكترونيات المستعملة.
+              </p>
+            </div>
+
+            <!-- Slide 5 (New Testimonial) -->
+            <div class="testimonial-slide">
+              <div class="company-logo">
+                <h2 class="logo-text">Arabian Business</h2>
+              </div>
+              <p class="testimonial-text">
+                مع ريفايب، تحصل على أجهزة إلكترونية مستعملة عالية الجودة ومكفولة بضمان.
+              </p>
+            </div>
+
+            <!-- Slide 6 (New Testimonial) -->
+            <div class="testimonial-slide">
+              <div class="company-logo">
+                <h2 class="logo-text-elegant">Tech Arabia</h2>
+              </div>
+              <p class="testimonial-text">
+                ريفايب غيّرت مفهوم شراء الأجهزة المستعملة بتقديمها الجودة العالية.
+              </p>
+            </div>
+          </div>
+
+          <!-- Slider Dots -->
+          <div class="slider-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+       <!-- ------------------top footer ----------------------- -->
+    <div class="banner-bottom-wrapper px-5 py-3">
+      <div class="banner-bottom-wrapper-1">
+        <div class="banner-bottom-wrapper-2">
+          <div>
+            <img
+              src="images/delivery-icon.svg"
+              alt="Free Delivery"
+              class="icon"
+            />
+          </div>
+          <div><h6 class="mb-0">توصيل مجاني</h6></div>
+        </div>
+        <div class="banner-bottom-wrapper-2">
+          <div>
+            <img
+              src="images/return-icon.svg"
+              alt="10 Days To Return"
+              class="icon"
+            />
+          </div>
+          <div> <h6 class="mb-0">10 أيام للإرجاع</h6></div>
+        </div>
+        <div class="banner-bottom-wrapper-2">
+          <div>
+            <img
+              src="images/warranty-icon.svg"
+              alt="12 Months Warranty"
+              class="icon"
+            />
+          </div>
+          <div>  <h6 class="mb-0">ضمان 12 شهر</h6></div>
+        </div>
+      </div>
+      <div class="banner-bottom-wrapper-3">
+        <div> <p class="mb-0">اشتر الآن، ادفع لاحقاً</p></div>
+        <div>
+          <img
+            src="images/banner-bottom-1.avif"
+            class="img-fluid-banner"
+            alt="Trust Image 1"
+          />
+        </div>
+        <div>
+          <img
+            src="images/banner-bottom-2.avif"
+            class="img-fluid-banner"
+            alt="Trust Image 2"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- ------------------Footer Sections------------------------------ -->
+<footer class="new-footer">
+  <div class="container-fluid px-5">
+    <div class="row">
+      <!-- Column 1: Company Info -->
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+        <div class="footer-logo mb-3">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0695/1737/7855/files/Full_logo_-_white-cropped.svg?v=1725347566"
+            alt="Revibe"
+            class="footer-logo-img"
+          />
+        </div>
+        <p class="footer-company-desc">
+          شركة ريفايف تكنولوجي FZ-LLC هي شركة مسجلة ومرخّصة من قبل
+          هيئة تطوير دبي.
+        </p>
+      </div>
+
+      <!-- Column 2: About Us -->
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+        <h3 class="footer-column-title">معلومات عنا</h3>
+        <ul class="footer-links-list">
+          <li><a href="#">حول ريفايف</a></li>
+          <li><a href="#">المتجر</a></li>
+          <li><a href="#">مدونتنا</a></li>
+          <li><a href="#">كن بائعًا</a></li>
+          <li><a href="#">تقييمات ريفايف</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Informations -->
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+        <h3 class="footer-column-title">معلومات</h3>
+        <ul class="footer-links-list">
+          <li><a href="#">مركز المساعدة والأسئلة الشائعة</a></li>
+          <li><a href="#">اتصل بنا</a></li>
+          <li><a href="#">الشروط والأحكام</a></li>
+          <li><a href="#">السياسة القانونية</a></li>
+        </ul>
+
+        <div class="footer-payment-icons mt-3">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg"
+            alt="Visa"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg"
+            alt="Mastercard"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Apple_Pay_logo.svg"
+            alt="Apple Pay"
+          />
+          <img
+            src="https://cdn.shopify.com/s/files/1/0695/1737/7855/files/tabby-logo-icon.png"
+            alt="Tabby"
+          />
+          <img
+            src="https://cdn.shopify.com/s/files/1/0695/1737/7855/files/tamara-logo-footer.png?v=1695192468"
+            alt="Tamara"
+          />
+          <img
+            src="https://cdn.shopify.com/s/files/1/0695/1737/7855/files/norton-sec-logo.png"
+            alt="Norton"
+          />
+        </div>
+      </div>
+
+      <!-- Column 4: My Account & Contact -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <h3 class="footer-column-title">حسابي</h3>
+        <ul class="footer-links-list">
+          <li><a href="#">حسابي</a></li>
+          <li><a href="#">تتبع طلبك</a></li>
+          <li><a href="#">رفع شكوى</a></li>
+          <li><a href="#">تتبع شكواك</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-3">
+        <a href="#" class="btn-sell-device">بيع جهازك</a>
+        <div class="footer-address mt-4">
+          <p class="mb-1">
+            شارع الملك سلمان بن عبدالعزيز آل سعود، مدينة دبي للإنترنت - دبي - الإمارات العربية المتحدة
+          </p>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="footer-contact-section mt-4">
+          <h3 class="footer-column-title">اتصل بنا</h3>
+          <p class="footer-contact-item">
+            <a href="mailto:contact@revibe.me">contact@revibe.me</a>
+          </p>
+          <p class="footer-contact-item">
+            <a href="tel:+97144597000">+971 4 459 7000</a>
+          </p>
+          <p class="footer-reply-time">(يتم الرد خلال يوم عمل واحد)</p>
+          <p class="footer-hours">
+            من الاثنين إلى الجمعة من 9:30 صباحًا إلى 5:30 مساءً
+          </p>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="footer-contact-section mt-4">
+          <p class="footer-reply-time">(يتم الرد خلال يوم عمل واحد)</p>
+          <p class="footer-hours">
+            من الاثنين إلى الجمعة من 9:30 صباحًا إلى 5:30 مساءً
+          </p>
+          <a href="#" class="footer-chat-link">تحدث معنا</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+    <div class="container-fluid px-5">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-6 text-center text-md-start mb-3 mb-md-0">
+          <p class="footer-copyright mb-0">
+            © 2025 ريفايف — جميع الحقوق محفوظة
+          </p>
+        </div>
+        <div class="col-12 col-md-6 text-center text-md-end">
+          <div class="footer-social-icons">
+            <div class="social-icon">
+              <a
+                href="https://www.facebook.com/RevibeUAE"
+                target="_blank"
+                class="social-icon-icon"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </div>
+            <div class="social-icon">
+              <a
+                href="https://www.instagram.com/revibe_me/"
+                target="_blank"
+                class="social-icon-icon"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/lang-switcher.js"></script>
+    <script>
+      document.querySelectorAll(".dropdown-toggle-custom").forEach((item) => {
+        item.addEventListener("click", function (e) {
+          e.preventDefault();
+          let menu = this.nextElementSibling;
+          menu.classList.toggle("show-dropdown");
+        });
+      });
+
+      // Sidebar functionality
+      const navToggle = document.getElementById("navToggle");
+      const sidebar = document.getElementById("navSidebar");
+      const sidebarClose = document.getElementById("sidebarClose");
+      const sidebarOverlay = document.getElementById("sidebarOverlay");
+
+      // Open sidebar
+      if (navToggle) {
+        navToggle.addEventListener("click", function () {
+          sidebar.classList.add("active");
+          sidebarOverlay.classList.add("active");
+          document.body.style.overflow = "hidden";
+        });
+      }
+
+      // Close sidebar
+      function closeSidebar() {
+        sidebar.classList.remove("active");
+        sidebarOverlay.classList.remove("active");
+        document.body.style.overflow = "";
+      }
+
+      if (sidebarClose) {
+        sidebarClose.addEventListener("click", closeSidebar);
+      }
+
+      if (sidebarOverlay) {
+        sidebarOverlay.addEventListener("click", closeSidebar);
+      }
+
+      // Sidebar dropdown functionality
+      document
+        .querySelectorAll(".sidebar-dropdown-toggle")
+        .forEach((toggle) => {
+          toggle.addEventListener("click", function (e) {
+            e.preventDefault();
+            const parent = this.parentElement;
+            const isActive = parent.classList.contains("active");
+
+            // Close all other dropdowns
+            document.querySelectorAll(".sidebar-dropdown").forEach((item) => {
+              item.classList.remove("active");
+            });
+
+            // Toggle current dropdown
+            if (!isActive) {
+              parent.classList.add("active");
+            }
+          });
+        });
+
+      // Laptop slider functionality
+      const laptopPrev = document.getElementById("laptopPrev");
+      const laptopالتالي = document.getElementById("laptopالتالي");
+      const laptopsSlider = document.getElementById("laptopsSlider");
+
+      if (laptopPrev && laptopsSlider) {
+        laptopPrev.addEventListener("click", function () {
+          laptopsSlider.scrollBy({
+            left: -300,
+            behavior: "smooth",
+          });
+        });
+      }
+
+      if (laptopالتالي && laptopsSlider) {
+        laptopالتالي.addEventListener("click", function () {
+          laptopsSlider.scrollBy({
+            left: 300,
+            behavior: "smooth",
+          });
+        });
+      }
+
+      // Video slider functionality
+      const videosPrev = document.getElementById("videosPrev");
+      const videosالتالي = document.getElementById("videosالتالي");
+      const videosSlider = document.getElementById("videosSlider");
+
+      if (videosPrev && videosSlider) {
+        videosPrev.addEventListener("click", function () {
+          videosSlider.scrollBy({
+            left: -300,
+            behavior: "smooth",
+          });
+        });
+      }
+
+      if (videosالتالي && videosSlider) {
+        videosالتالي.addEventListener("click", function () {
+          videosSlider.scrollBy({
+            left: 300,
+            behavior: "smooth",
+          });
+        });
+      }
+
+      // Press Testimonials Slider Functionality
+      const testimonialsSlider = document.getElementById("testimonialsSlider");
+      const dots = document.querySelectorAll(".slider-dots .dot");
+
+      if (testimonialsSlider && dots.length > 0) {
+        // Auto-play functionality
+        let testimonialInterval = setInterval(() => {
+          const scrollAmount = testimonialsSlider.clientWidth;
+          const maxScroll =
+            testimonialsSlider.scrollWidth - testimonialsSlider.clientWidth;
+
+          if (
+            testimonialsSlider.scrollLeft + scrollAmount >=
+            testimonialsSlider.scrollWidth - 10
+          ) {
+            testimonialsSlider.scrollTo({ left: 0, behavior: "smooth" });
+          } else {
+            testimonialsSlider.scrollBy({
+              left: scrollAmount,
+              behavior: "smooth",
+            });
+          }
+        }, 4000); // Scroll every 4 seconds
+
+        // Update dots on scroll
+        testimonialsSlider.addEventListener("scroll", () => {
+          const scrollPosition = testimonialsSlider.scrollLeft;
+          const slideWidth = testimonialsSlider.clientWidth;
+          const activeIndex = Math.round(scrollPosition / slideWidth);
+
+          dots.forEach((dot, index) => {
+            if (index === activeIndex) {
+              dot.classList.add("active");
+            } else {
+              dot.classList.remove("active");
+            }
+          });
+        });
+
+        // Click on dots to navigate
+        dots.forEach((dot, index) => {
+          dot.addEventListener("click", () => {
+            const slideWidth = testimonialsSlider.clientWidth; // Assuming full width slides or close to it
+            // For more precise scrolling if slides have gaps, might need calculation
+            // But for this simple case:
+            const targetScroll =
+              index * (testimonialsSlider.scrollWidth / dots.length);
+
+            testimonialsSlider.scrollTo({
+              left: targetScroll,
+              behavior: "smooth",
+            });
+
+            // Reset interval on manual interaction
+            clearInterval(testimonialInterval);
+            testimonialInterval = setInterval(() => {
+              const scrollAmount = testimonialsSlider.clientWidth;
+              if (
+                testimonialsSlider.scrollLeft + scrollAmount >=
+                testimonialsSlider.scrollWidth - 10
+              ) {
+                testimonialsSlider.scrollTo({ left: 0, behavior: "smooth" });
+              } else {
+                testimonialsSlider.scrollBy({
+                  left: scrollAmount,
+                  behavior: "smooth",
+                });
+              }
+            }, 4000);
+          });
+        });
+      }
+
+      // ==================== COUNTDOWN TIMER FUNCTIONALITY ====================
+      // Set cyber Monday end date (7 days from now for demo)
+      const cyberMondayEnd = new Date();
+      cyberMondayEnd.setDate(cyberMondayEnd.getDate() + 7);
+      cyberMondayEnd.setساعات(23, 59, 59, 999);
+
+      function updateCountdown() {
+        const now = new Date().getTime();
+        const distance = cyberMondayEnd - now;
+
+        if (distance > 0) {
+          const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          const hours = Math.floor(
+            (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+          );
+          const minutes = Math.floor(
+            (distance % (1000 * 60 * 60)) / (1000 * 60)
+          );
+          const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          // Update main countdown timer
+          const mainأيام = document.getElementById("mainأيام");
+          const mainساعات = document.getElementById("mainساعات");
+          const mainدقائق = document.getElementById("mainدقائق");
+          const mainثواني = document.getElementById("mainثواني");
+
+          if (mainأيام) mainأيام.textContent = String(days).padStart(2, "0");
+          if (mainساعات) mainساعات.textContent = String(hours).padStart(2, "0");
+          if (mainدقائق) mainدقائق.textContent = String(minutes).padStart(2, "0");
+          if (mainثواني) mainثواني.textContent = String(seconds).padStart(2, "0");
+
+          // Update all product card countdown timers
+          document.querySelectorAll(".product-countdown").forEach((timer) => {
+            const timerValues = timer.querySelectorAll(".timer-value");
+            if (timerValues.length === 4) {
+              timerValues[0].textContent = String(days).padStart(2, "0");
+              timerValues[1].textContent = String(hours).padStart(2, "0");
+              timerValues[2].textContent = String(minutes).padStart(2, "0");
+              timerValues[3].textContent = String(seconds).padStart(2, "0");
+            }
+          });
+        }
+      }
+
+      // Update countdown every second
+      setInterval(updateCountdown, 1000);
+      updateCountdown(); // Initial call
+
+      // ==================== CATEGORIES SLIDER ====================
+      const categoriesPrev = document.getElementById("categoriesPrev");
+      const categoriesالتالي = document.getElementById("categoriesالتالي");
+      const categoriesSlider = document.getElementById("categoriesSlider");
+
+      if (categoriesPrev && categoriesSlider) {
+        categoriesPrev.addEventListener("click", function () {
+          categoriesSlider.scrollBy({ left: -300, behavior: "smooth" });
+        });
+      }
+
+      if (categoriesالتالي && categoriesSlider) {
+        categoriesالتالي.addEventListener("click", function () {
+          categoriesSlider.scrollBy({ left: 300, behavior: "smooth" });
+        });
+      }
+
+      // ==================== CYBER PRODUCTS SLIDER ====================
+      const cyberProductsPrev = document.getElementById("cyberProductsPrev");
+      const cyberProductsالتالي = document.getElementById("cyberProductsالتالي");
+      const cyberProductsSlider = document.getElementById(
+        "cyberProductsSlider"
+      );
+
+      if (cyberProductsPrev && cyberProductsSlider) {
+        cyberProductsPrev.addEventListener("click", function () {
+          cyberProductsSlider.scrollBy({ left: -300, behavior: "smooth" });
+        });
+      }
+
+      if (cyberProductsالتالي && cyberProductsSlider) {
+        cyberProductsالتالي.addEventListener("click", function () {
+          cyberProductsSlider.scrollBy({ left: 300, behavior: "smooth" });
+        });
+      }
+
+      // ==================== IPHONES SLIDER ====================
+      const iphonesPrev = document.getElementById("iphonesPrev");
+      const iphonesالتالي = document.getElementById("iphonesالتالي");
+      const iphonesSlider = document.getElementById("iphonesSlider");
+
+      if (iphonesPrev && iphonesSlider) {
+        iphonesPrev.addEventListener("click", function () {
+          iphonesSlider.scrollBy({ left: -300, behavior: "smooth" });
+        });
+      }
+
+      if (iphonesالتالي && iphonesSlider) {
+        iphonesالتالي.addEventListener("click", function () {
+          iphonesSlider.scrollBy({ left: 300, behavior: "smooth" });
+        });
+      }
+
+      // ==================== REVIBE EXPRESS SLIDER (Updated IDs) ====================
+      const revibeLaptopPrev = document.getElementById("revibeLaptopPrev");
+      const revibeLaptopالتالي = document.getElementById("revibeLaptopالتالي");
+      const revibeلابتوبSlider = document.getElementById(
+        "revibeلابتوبSlider"
+      );
+
+      if (revibeLaptopPrev && revibeلابتوبSlider) {
+        revibeLaptopPrev.addEventListener("click", function () {
+          revibeلابتوبSlider.scrollBy({ left: -300, behavior: "smooth" });
+        });
+      }
+
+      if (revibeLaptopالتالي && revibeلابتوبSlider) {
+        revibeLaptopالتالي.addEventListener("click", function () {
+          revibeلابتوبSlider.scrollBy({ left: 300, behavior: "smooth" });
+        });
+      }
+
+      // ==================== VIDEO MODAL FUNCTIONALITY ====================
+      // Create video modal element
+      const videoModal = document.createElement("div");
+      videoModal.className = "video-modal";
+      videoModal.id = "videoModal";
+      videoModal.innerHTML = `
+        <div class="video-modal-content">
+          <button class="video-close-btn" id="videoCloseBtn">×</button>
+          <iframe id="videoFrame" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      `;
+      document.body.appendChild(videoModal);
+
+      // Video URLs (YouTube example - replace with actual videos)
+      const videoUrls = [
+        "https://www.youtube.com/embed/dQw4w9WgXcQ", // Placeholder video 1
+        "https://www.youtube.com/embed/dQw4w9WgXcQ", // Placeholder video 2
+        "https://www.youtube.com/embed/dQw4w9WgXcQ", // Placeholder video 3
+        "https://www.youtube.com/embed/dQw4w9WgXcQ", // Placeholder video 4
+      ];
+
+      // Add click event to all video cards
+      const videoCards = document.querySelectorAll(".video-card");
+      videoCards.forEach((card, index) => {
+        card.addEventListener("click", function () {
+          const modal = document.getElementById("videoModal");
+          const frame = document.getElementById("videoFrame");
+          const videoUrl = videoUrls[index % videoUrls.length] + "?autoplay=1";
+          frame.src = videoUrl;
+          modal.classList.add("active");
+        });
+      });
+
+      // Close video modal
+      const videoCloseBtn = document.getElementById("videoCloseBtn");
+      if (videoCloseBtn) {
+        videoCloseBtn.addEventListener("click", function () {
+          const modal = document.getElementById("videoModal");
+          const frame = document.getElementById("videoFrame");
+          frame.src = ""; // Stop video
+          modal.classList.remove("active");
+        });
+      }
+
+      // Close modal when clicking outside
+      videoModal.addEventListener("click", function (e) {
+        if (e.target === videoModal) {
+          const frame = document.getElementById("videoFrame");
+          frame.src = ""; // Stop video
+          videoModal.classList.remove("active");
+        }
+      });
+    </script>
+    <script>
+      function setLanguage(lang) {
+        if (lang === "en") {
+          alert("Language switched to English");
+          // Add your real language-switch logic here
+        } else if (lang === "ar") {
+          alert("تم تغيير اللغة إلى العربية");
+          // Add your real Arabic language-switch logic here
+        }
+      }
+      // ==================== NEW SECTIONS SLIDERS ====================
+      // Recommended Slider
+      const recommendedPrev = document.getElementById("recommendedPrev");
+      const recommendedNext = document.getElementById("recommendedNext");
+      const recommendedSlider = document.getElementById("recommendedSlider");
+
+      if (recommendedPrev && recommendedSlider) {
+        recommendedPrev.addEventListener("click", function() {
+          recommendedSlider.scrollBy({ left: -300, behavior: "smooth" });
+        });
+      }
+      if (recommendedNext && recommendedSlider) {
+        recommendedNext.addEventListener("click", function() {
+          recommendedSlider.scrollBy({ left: 300, behavior: "smooth" });
+        });
+      }
+
+      // Hot Deals Slider
+      const hotDealsPrev = document.getElementById("hotDealsPrev");
+      const hotDealsNext = document.getElementById("hotDealsNext");
+      const hotDealsSlider = document.getElementById("hotDealsSlider");
+
+      if (hotDealsPrev && hotDealsSlider) {
+        hotDealsPrev.addEventListener("click", function() {
+          hotDealsSlider.scrollBy({ left: -300, behavior: "smooth" });
+        });
+      }
+      if (hotDealsNext && hotDealsSlider) {
+        hotDealsNext.addEventListener("click", function() {
+          hotDealsSlider.scrollBy({ left: 300, behavior: "smooth" });
+        });
+      }
+
+      // ==================== COLOR DOT FUNCTIONALITY ====================
+      document.querySelectorAll('.product-color-dot').forEach(dot => {
+        dot.addEventListener('click', function() {
+          // Find parent card
+          const card = this.closest('.product-grid-card');
+          if(!card) return;
+
+          // Remove active class from siblings
+          card.querySelectorAll('.product-color-dot').forEach(d => d.classList.remove('active'));
+          this.classList.add('active');
+
+          // Update image
+          const imgUrl = this.getAttribute('data-image');
+          if (imgUrl) {
+            const mainImg = card.querySelector('.product-main-image');
+            if(mainImg) {
+                // Simple fade effect
+                mainImg.style.opacity = '0.5';
+                setTimeout(() => {
+                    mainImg.src = imgUrl;
+                    mainImg.style.opacity = '1';
+                }, 200);
+            }
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
+

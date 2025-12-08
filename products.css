@@ -25,6 +25,16 @@
   border-radius: 10px 0 0 10px;
   margin-bottom: 5px;
 }
+.hero-content-wrappers {
+  background: #1a1a1a;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 180px;
+  border-radius: 0px 10px 10px 0px;
+  margin-bottom: 5px;
+}
 
 .hero-title {
   font-size: 19px;
@@ -109,7 +119,15 @@
   min-height: 180px;
   border-radius: 0 10px 10px 0;
 }
-
+.hero-image-wrappers {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 180px;
+  border-radius: 10px 0px 0px 10px;
+}
 .hero-gradient-bg {
   position: absolute;
   top: 0;
@@ -150,7 +168,10 @@
     padding: 20px 10px;
     min-height: auto;
   }
-
+.hero-content-wrappers {
+    padding: 20px 10px;
+    min-height: auto;
+  }
   .hero-title {
     font-size: 28px;
   }
@@ -166,7 +187,9 @@
   .hero-image-wrapper {
     min-height: 250px;
   }
-
+  .hero-image-wrappers {
+    min-height: 250px;
+  }
   .hero-iphone {
     max-width: 150px;
   }
@@ -174,6 +197,9 @@
 
 @media (max-width: 767px) {
   .hero-content-wrapper {
+    padding: 30px 20px;
+  }
+  .hero-content-wrappers {
     padding: 30px 20px;
   }
 
@@ -198,6 +224,9 @@
   }
 
   .hero-image-wrapper {
+    min-height: 200px;
+  }
+    .hero-image-wrappers {
     min-height: 200px;
   }
 
@@ -882,7 +911,13 @@
   .hero-content-wrapper {
     border-radius: 10px;
   }
+   .hero-content-wrappers {
+    border-radius: 10px;
+  }
   .hero-image-wrapper {
+    border-radius: 10px;
+  }
+    .hero-image-wrappers {
     border-radius: 10px;
   }
 }
