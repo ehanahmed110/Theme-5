@@ -20,7 +20,7 @@ p.mb-0.banner-texts.text-white {
 }
 /* ===================== NAVBAR STYLES ===================== */
 .navbar-img img {
-  height: 40px;
+  height: 35px;
 }
 
 .navbar {
@@ -31,7 +31,11 @@ p.mb-0.banner-texts.text-white {
 .navbar-img img {
   max-height: 45px;
 }
-
+@media (max-width:450px){
+  .navbar-img img {
+    height:25px;
+  }
+}
 /* Mobile Toggle Button */
 .nav-toggle-btn {
   background: none;
@@ -133,9 +137,9 @@ p.mb-0.banner-texts.text-white {
 }
 
 /* Mobile Search Wrapper */
-.mobile-search-wrapper {
+/* .mobile-search-wrapper {
   padding: 0 1rem;
-}
+} */
 
 .mobile-search-wrapper .nav-search {
   width: 100%;
@@ -1092,10 +1096,14 @@ p.mb-0.banner-texts.text-white {
 
 /* ===================== CERTIFIED RENEWED LAPTOPS SECTION ===================== */
 .certified-laptops-section {
-  padding: 40px 0px;
+  padding: 40px 30px;
   background: #fff;
 }
-
+@media (max-width: 450px) {
+  .certified-laptops-section {
+    padding: 30px 10px;
+  }
+}
 .section-title {
   font-size: 20px;
   font-weight: 700;
@@ -1422,7 +1430,7 @@ p.mb-0.banner-texts.text-white {
 /* Responsive Certified Laptops */
 @media (max-width: 991px) {
   .certified-laptops-section {
-    padding: 30px 0;
+    padding: 20px 30;
   }
 
   .section-title {
@@ -1439,7 +1447,7 @@ p.mb-0.banner-texts.text-white {
   }
 
   .products-slider-wrapper {
-    padding: 20px 20px;
+    padding: 20px 10px;
   }
 
   .product-card {
@@ -1484,7 +1492,7 @@ p.mb-0.banner-texts.text-white {
   }
 
   .products-slider-wrapper {
-    padding: 0 35px;
+    padding: 0 0px;
   }
 
   .product-card {
@@ -1541,10 +1549,14 @@ p.mb-0.banner-texts.text-white {
 
 /* ===================== CUSTOMER TRUST VIDEO SECTION ===================== */
 .customer-trust-section {
-  padding: 40px 0;
+  padding: 40px 30px;
   background: #fff;
 }
-
+@media (max-width: 767px) {
+  .customer-trust-section {
+    padding: 40px 10px;
+  }
+}
 .trust-section-title {
   font-size: 21px;
   font-weight: 700;
@@ -2045,10 +2057,15 @@ i.fas.fa-thumbs-up.rising-like {
 
 /* ===================== SHOP CATEGORIES SECTION ===================== */
 .shop-categories-section {
-  padding: 30px 0 0 0;
+  padding: 30px 30px 0 30px;
   background: #fff;
 }
-
+@media (max-width: 450px) {
+  .shop-categories-section {
+    padding: 30px 10px 0 10px;
+    background: #fff;
+  }
+}
 .categories-slider-wrapper {
   position: relative;
   padding: 10px 0;
@@ -2107,12 +2124,16 @@ i.fas.fa-thumbs-up.rising-like {
 
 /* ===================== CYBER MONDAY DEAL SECTION ===================== */
 .cyber-monday-deal-section {
-  padding: 40px 0px;
+  padding: 40px 30px;
   background: linear-gradient(135deg, #7c3aed 0%, #a855f7 50%, #c026d3 100%);
   position: relative;
   overflow: hidden;
 }
-
+@media (max-width: 450px) {
+  .cyber-monday-deal-section {
+    padding: 30px 10px;
+  }
+}
 .cyber-monday-deal-section::before {
   content: "";
   position: absolute;
@@ -2131,11 +2152,13 @@ i.fas.fa-thumbs-up.rising-like {
 }
 .cyber-monday-sub-wrappers {
   display: flex;
-  gap: 20px;
+  justify-content: space-between;
+  gap: 10px;
 }
 .cyber-monday-sub-wrapper {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .cyber-monday-wrapper {
   position: relative;
@@ -2214,7 +2237,14 @@ i.fas.fa-thumbs-up.rising-like {
   color: white;
   margin: 0 5px;
 }
-
+@media (max-width: 450px) {
+  .countdown-colon {
+    margin: 0;
+  }
+  .cyber-monday-sub-wrappers {
+    gap: 0;
+  }
+}
 .see-all-container {
   margin-bottom: 20px;
   text-align: right;
@@ -2266,10 +2296,14 @@ i.fas.fa-thumbs-up.rising-like {
 
 /* ===================== CERTIFIED IPHONES SECTION ===================== */
 .certified-iphones-section {
-  padding: 0px 0 20px 0;
+  padding: 0px 30px 20px 30px;
   background: #fff;
 }
-
+@media (max-width: 450px) {
+  .certified-iphones-section {
+    padding: 0px 10px 20px 10px;
+  }
+}
 .iphones-promo-banner {
   border-radius: 15px;
   display: flex;
@@ -2685,7 +2719,7 @@ i.fas.fa-thumbs-up.rising-like {
 }
 @media (max-width: 972px) {
   .eco-laptop-image img {
-    height: 250px !important;
+    height: 300px !important;
     min-height: auto !important;
     width: 100%;
     border-radius: 10px;
@@ -2693,7 +2727,7 @@ i.fas.fa-thumbs-up.rising-like {
     margin-top: 15px;
   }
   .iphones-promo-banner img {
-    height: 250px !important;
+    height: 300px !important;
     min-height: auto !important;
     width: 100%;
     border-radius: 10px;
@@ -2714,6 +2748,12 @@ i.fas.fa-thumbs-up.rising-like {
   background: #f0f0f0 !important;
   flex-wrap: wrap;
   gap: 20px;
+  padding: 0 40px;
+}
+@media (max-width: 435px) {
+  .banner-bottom-wrapper {
+    padding: 0 16px;
+  }
 }
 .banner-bottom-wrapper-1 {
   display: flex;
@@ -2740,16 +2780,16 @@ i.fas.fa-thumbs-up.rising-like {
     justify-content: space-between;
     gap: 20px;
   }
-  .banner-bottom-wrapper-3{
-    width:100%;
+  .banner-bottom-wrapper-3 {
+    width: 100%;
     justify-content: space-between;
   }
 }
 @media (max-width: 1030px) {
-  .banner-bottom-wrapper-3 p{
-    font-size:14px;
+  .banner-bottom-wrapper-3 p {
+    font-size: 14px;
   }
-   .banner-bottom-wrapper-2 h6{
-    font-size:14px;
+  .banner-bottom-wrapper-2 h6 {
+    font-size: 14px;
   }
 }

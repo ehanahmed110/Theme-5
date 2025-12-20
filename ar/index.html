@@ -322,7 +322,7 @@
       </button>
     </div>
     <!-- -------------banner-bottom------------------------ -->
-    <div class="banner-bottom-wrapper px-5 py-3">
+    <div class="banner-bottom-wrapper py-3">
       <div class="banner-bottom-wrapper-1">
         <div class="banner-bottom-wrapper-2">
           <div>
@@ -389,7 +389,7 @@
 
     <!-- ----------------تسوق المنتجات المجددة المعتمدة Section ------------------ -->
     <section class="shop-categories-section">
-      <div class="container-fluid px-5">
+      <div class="container-fluid">
         <div class="row align-items-center">
           <div class="col-8">
             <h2 class="section-title">تسوق المنتجات المجددة المعتمدة</h2>
@@ -501,7 +501,7 @@
 
     <!-- ----------------قسم موصى به لك ------------------ -->
     <section class="shop-categories-section mb-5">
-      <div class="container-fluid px-5">
+      <div class="container-fluid">
         <div class="row align-items-center mb-4">
           <div class="col-8">
             <h2 class="section-title">موصى به لك</h2>
@@ -724,7 +724,7 @@
 
     <!-- ----------------قسم عروض مميزة ------------------ -->
     <section class="shop-categories-section mb-5">
-      <div class="container-fluid px-5">
+      <div class="container-fluid">
         <div class="row align-items-center mb-4">
           <div class="col-8">
             <h2 class="section-title">عروض مميزة</h2>
@@ -894,7 +894,7 @@
 
     <!-- ----------------قسم عروض سايبر مانداي ------------------ -->
     <section class="cyber-monday-deal-section">
-      <div class="container-fluid px-5">
+      <div class="container-fluid">
         <div class="cyber-monday-wrapper">
           <!-- سايبر مانداي Badge/Logo -->
           <div class="cyber-monday-sub-wrapper">
@@ -1065,7 +1065,7 @@
             <!-- التالي Arrow -->
             <button
               class="slider-arrow slider-arrow-next"
-              id="cyberProductsالتالي"
+              id="cyberProductsNext"
             >
               <i class="fas fa-chevron-right"></i>
             </button>
@@ -1075,7 +1075,7 @@
     </section>
     <!-- ----------------ريفايب إكسبرس ---------------------- -->
     <section class="certified-laptops-section">
-      <div class="container-fluid px-5">
+      <div class="container-fluid">
         <div class="row mb-4 align-items-center">
           <div class="col-8">
             <h2 class="section-title-revibe">ريفايب إكسبرس</h2>
@@ -1200,7 +1200,7 @@
               <!-- التالي Arrow -->
               <button
                 class="slider-arrow slider-arrow-next"
-                id="revibeLaptopالتالي"
+                id="revibeLaptopNext"
               >
                 <i class="fas fa-chevron-right"></i>
               </button>
@@ -1222,7 +1222,7 @@
 
     <!-- ----------------CERTIFIED RENEWED IPHONES Section ------------------ -->
     <section class="certified-iphones-section">
-      <div class="container-fluid px-5">
+      <div class="container-fluid">
         <div class="row mb-4 align-items-center">
           <div class="col-8">
             <h2 class="section-title">أجهزة آيفون مجددة ومعتمدة</h2>
@@ -1481,7 +1481,7 @@
     </section>
     <!-- ----------------CERTIFIED RENEWED LAPTOPS Section ------------------ -->
     <section class="certified-laptops-section">
-      <div class="container-fluid px-5">
+      <div class="container-fluid">
         <div class="row mb-4 align-items-center">
           <div class="col-8">
             <h2 class="section-title">أجهزة لابتوب مجددة ومعتمدة</h2>
@@ -1780,7 +1780,7 @@
     <!-- ----------------Customer Trust Video Section------------------------------ -->
 
     <section class="customer-trust-section">
-      <div class="container-fluid px-5">
+      <div class="container-fluid">
         <h2 class="trust-section-title">أكثر من 150,000 عميل يثقون بمنصتنا</h2>
 
         <div class="row">
@@ -1910,7 +1910,7 @@
               <!-- التالي Arrow -->
               <button
                 class="video-slider-arrow video-slider-arrow-next"
-                id="videosالتالي"
+                id="videosNext"
               >
                 <i class="fas fa-chevron-right"></i>
               </button>
@@ -2000,7 +2000,7 @@
     </section>
 
     <!-- ------------------top footer ----------------------- -->
-    <div class="banner-bottom-wrapper px-5 py-3">
+    <div class="banner-bottom-wrapper py-3">
       <div class="banner-bottom-wrapper-1">
         <div class="banner-bottom-wrapper-2">
           <div>
@@ -2212,7 +2212,7 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-    <script src="js/lang-switcher.js"></script>
+    <script src="../js/lang-switcher.js"></script>
     <script>
       document.querySelectorAll(".dropdown-toggle-custom").forEach((item) => {
         item.addEventListener("click", function (e) {
@@ -2273,53 +2273,160 @@
           });
         });
 
-      // Laptop slider functionality
+
+      // ==================== COUNTDOWN TIMER FUNCTIONALITY ====================
+      // Set cyber Monday end date (7 days from now for demo)
+      const cyberMondayEnd = new Date();
+      cyberMondayEnd.setDate(cyberMondayEnd.getDate() + 7);
+      cyberMondayEnd.setHours(23, 59, 59, 999);
+
+      function updateCountdown() {
+        const now = new Date().getTime();
+        const distance = cyberMondayEnd - now;
+
+        if (distance > 0) {
+          const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          const hours = Math.floor(
+            (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+          );
+          const minutes = Math.floor(
+            (distance % (1000 * 60 * 60)) / (1000 * 60)
+          );
+          const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          // Update main countdown timer
+          const mainDays = document.getElementById("mainأيام");
+          const mainHours = document.getElementById("mainساعات");
+          const mainMinutes = document.getElementById("mainدقائق");
+          const mainSeconds = document.getElementById("mainثواني");
+
+          if (mainDays) mainDays.textContent = String(days).padStart(2, "0");
+          if (mainHours) mainHours.textContent = String(hours).padStart(2, "0");
+          if (mainMinutes)
+            mainMinutes.textContent = String(minutes).padStart(2, "0");
+          if (mainSeconds)
+            mainSeconds.textContent = String(seconds).padStart(2, "0");
+
+          // Update all product card countdown timers
+          document.querySelectorAll(".product-countdown").forEach((timer) => {
+            const timerValues = timer.querySelectorAll(".timer-value");
+            if (timerValues.length === 4) {
+              timerValues[0].textContent = String(days).padStart(2, "0");
+              timerValues[1].textContent = String(hours).padStart(2, "0");
+              timerValues[2].textContent = String(minutes).padStart(2, "0");
+              timerValues[3].textContent = String(seconds).padStart(2, "0");
+            }
+          });
+        }
+      }
+
+      // Update countdown every second
+      setInterval(updateCountdown, 1000);
+      updateCountdown(); // Initial call
+
+      // ==================== CATEGORIES SLIDER ====================
+      const categoriesPrev = document.getElementById("categoriesPrev");
+      const categoriesNext = document.getElementById("categoriesNext");
+      const categoriesSlider = document.getElementById("categoriesSlider");
+
+      if (categoriesPrev && categoriesSlider) {
+        categoriesPrev.addEventListener("click", function () {
+          categoriesSlider.scrollBy({ left: -300, behavior: "smooth" });
+        });
+      }
+
+      if (categoriesNext && categoriesSlider) {
+        categoriesNext.addEventListener("click", function () {
+          categoriesSlider.scrollBy({ left: 300, behavior: "smooth" });
+        });
+      }
+
+      // ==================== CYBER PRODUCTS SLIDER ====================
+      const cyberProductsPrev = document.getElementById("cyberProductsPrev");
+      const cyberProductsNext = document.getElementById("cyberProductsNext");
+      const cyberProductsSlider = document.getElementById("cyberProductsSlider");
+
+      if (cyberProductsPrev && cyberProductsSlider) {
+        cyberProductsPrev.addEventListener("click", function () {
+          cyberProductsSlider.scrollBy({ left: -300, behavior: "smooth" });
+        });
+      }
+
+      if (cyberProductsNext && cyberProductsSlider) {
+        cyberProductsNext.addEventListener("click", function () {
+          cyberProductsSlider.scrollBy({ left: 300, behavior: "smooth" });
+        });
+      }
+
+      // ==================== IPHONES SLIDER ====================
+      const iphonesPrev = document.getElementById("iphonesPrev");
+      const iphonesNext = document.getElementById("iphonesNext");
+      const iphonesSlider = document.getElementById("iphonesSlider");
+
+      if (iphonesPrev && iphonesSlider) {
+        iphonesPrev.addEventListener("click", function () {
+          iphonesSlider.scrollBy({ left: -300, behavior: "smooth" });
+        });
+      }
+
+      if (iphonesNext && iphonesSlider) {
+        iphonesNext.addEventListener("click", function () {
+          iphonesSlider.scrollBy({ left: 300, behavior: "smooth" });
+        });
+      }
+
+      // ==================== REVIBE EXPRESS SLIDER ====================
+      const revibeLaptopPrev = document.getElementById("revibeLaptopPrev");
+      const revibeLaptopNext = document.getElementById("revibeLaptopNext");
+      const revibeLaptopSlider = document.getElementById("revibeلابتوبSlider");
+
+      if (revibeLaptopPrev && revibeLaptopSlider) {
+        revibeLaptopPrev.addEventListener("click", function () {
+          revibeLaptopSlider.scrollBy({ left: -300, behavior: "smooth" });
+        });
+      }
+
+      if (revibeLaptopNext && revibeLaptopSlider) {
+        revibeLaptopNext.addEventListener("click", function () {
+          revibeLaptopSlider.scrollBy({ left: 300, behavior: "smooth" });
+        });
+      }
+
+      // ==================== LAPTOPS SLIDER ====================
       const laptopPrev = document.getElementById("laptopPrev");
-      const laptopالتالي = document.getElementById("laptopالتالي");
+      const laptopNext = document.getElementById("laptopNext");
       const laptopsSlider = document.getElementById("laptopsSlider");
 
       if (laptopPrev && laptopsSlider) {
         laptopPrev.addEventListener("click", function () {
-          laptopsSlider.scrollBy({
-            left: -300,
-            behavior: "smooth",
-          });
+          laptopsSlider.scrollBy({ left: -300, behavior: "smooth" });
         });
       }
 
-      if (laptopالتالي && laptopsSlider) {
-        laptopالتالي.addEventListener("click", function () {
-          laptopsSlider.scrollBy({
-            left: 300,
-            behavior: "smooth",
-          });
+      if (laptopNext && laptopsSlider) {
+        laptopNext.addEventListener("click", function () {
+          laptopsSlider.scrollBy({ left: 300, behavior: "smooth" });
         });
       }
 
-      // Video slider functionality
+      // ==================== VIDEOS SLIDER ====================
       const videosPrev = document.getElementById("videosPrev");
-      const videosالتالي = document.getElementById("videosالتالي");
+      const videosNext = document.getElementById("videosNext");
       const videosSlider = document.getElementById("videosSlider");
 
       if (videosPrev && videosSlider) {
         videosPrev.addEventListener("click", function () {
-          videosSlider.scrollBy({
-            left: -300,
-            behavior: "smooth",
-          });
+          videosSlider.scrollBy({ left: -300, behavior: "smooth" });
         });
       }
 
-      if (videosالتالي && videosSlider) {
-        videosالتالي.addEventListener("click", function () {
-          videosSlider.scrollBy({
-            left: 300,
-            behavior: "smooth",
-          });
+      if (videosNext && videosSlider) {
+        videosNext.addEventListener("click", function () {
+          videosSlider.scrollBy({ left: 300, behavior: "smooth" });
         });
       }
 
-      // Press Testimonials Slider Functionality
+      // ==================== TESTIMONIALS SLIDER ====================
       const testimonialsSlider = document.getElementById("testimonialsSlider");
       const dots = document.querySelectorAll(".slider-dots .dot");
 
@@ -2361,9 +2468,7 @@
         // Click on dots to navigate
         dots.forEach((dot, index) => {
           dot.addEventListener("click", () => {
-            const slideWidth = testimonialsSlider.clientWidth; // Assuming full width slides or close to it
-            // For more precise scrolling if slides have gaps, might need calculation
-            // But for this simple case:
+            const slideWidth = testimonialsSlider.clientWidth;
             const targetScroll =
               index * (testimonialsSlider.scrollWidth / dots.length);
 
@@ -2389,128 +2494,6 @@
               }
             }, 4000);
           });
-        });
-      }
-
-      // ==================== COUNTDOWN TIMER FUNCTIONALITY ====================
-      // Set cyber Monday end date (7 days from now for demo)
-      const cyberMondayEnd = new Date();
-      cyberMondayEnd.setDate(cyberMondayEnd.getDate() + 7);
-      cyberMondayEnd.setساعات(23, 59, 59, 999);
-
-      function updateCountdown() {
-        const now = new Date().getTime();
-        const distance = cyberMondayEnd - now;
-
-        if (distance > 0) {
-          const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-          const hours = Math.floor(
-            (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-          );
-          const minutes = Math.floor(
-            (distance % (1000 * 60 * 60)) / (1000 * 60)
-          );
-          const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-          // Update main countdown timer
-          const mainأيام = document.getElementById("mainأيام");
-          const mainساعات = document.getElementById("mainساعات");
-          const mainدقائق = document.getElementById("mainدقائق");
-          const mainثواني = document.getElementById("mainثواني");
-
-          if (mainأيام) mainأيام.textContent = String(days).padStart(2, "0");
-          if (mainساعات) mainساعات.textContent = String(hours).padStart(2, "0");
-          if (mainدقائق)
-            mainدقائق.textContent = String(minutes).padStart(2, "0");
-          if (mainثواني)
-            mainثواني.textContent = String(seconds).padStart(2, "0");
-
-          // Update all product card countdown timers
-          document.querySelectorAll(".product-countdown").forEach((timer) => {
-            const timerValues = timer.querySelectorAll(".timer-value");
-            if (timerValues.length === 4) {
-              timerValues[0].textContent = String(days).padStart(2, "0");
-              timerValues[1].textContent = String(hours).padStart(2, "0");
-              timerValues[2].textContent = String(minutes).padStart(2, "0");
-              timerValues[3].textContent = String(seconds).padStart(2, "0");
-            }
-          });
-        }
-      }
-
-      // Update countdown every second
-      setInterval(updateCountdown, 1000);
-      updateCountdown(); // Initial call
-
-      // ==================== CATEGORIES SLIDER ====================
-      const categoriesPrev = document.getElementById("categoriesPrev");
-      const categoriesالتالي = document.getElementById("categoriesالتالي");
-      const categoriesSlider = document.getElementById("categoriesSlider");
-
-      if (categoriesPrev && categoriesSlider) {
-        categoriesPrev.addEventListener("click", function () {
-          categoriesSlider.scrollBy({ left: -300, behavior: "smooth" });
-        });
-      }
-
-      if (categoriesالتالي && categoriesSlider) {
-        categoriesالتالي.addEventListener("click", function () {
-          categoriesSlider.scrollBy({ left: 300, behavior: "smooth" });
-        });
-      }
-
-      // ==================== CYBER PRODUCTS SLIDER ====================
-      const cyberProductsPrev = document.getElementById("cyberProductsPrev");
-      const cyberProductsالتالي = document.getElementById(
-        "cyberProductsالتالي"
-      );
-      const cyberProductsSlider = document.getElementById(
-        "cyberProductsSlider"
-      );
-
-      if (cyberProductsPrev && cyberProductsSlider) {
-        cyberProductsPrev.addEventListener("click", function () {
-          cyberProductsSlider.scrollBy({ left: -300, behavior: "smooth" });
-        });
-      }
-
-      if (cyberProductsالتالي && cyberProductsSlider) {
-        cyberProductsالتالي.addEventListener("click", function () {
-          cyberProductsSlider.scrollBy({ left: 300, behavior: "smooth" });
-        });
-      }
-
-      // ==================== IPHONES SLIDER ====================
-      const iphonesPrev = document.getElementById("iphonesPrev");
-      const iphonesالتالي = document.getElementById("iphonesالتالي");
-      const iphonesSlider = document.getElementById("iphonesSlider");
-
-      if (iphonesPrev && iphonesSlider) {
-        iphonesPrev.addEventListener("click", function () {
-          iphonesSlider.scrollBy({ left: -300, behavior: "smooth" });
-        });
-      }
-
-      if (iphonesالتالي && iphonesSlider) {
-        iphonesالتالي.addEventListener("click", function () {
-          iphonesSlider.scrollBy({ left: 300, behavior: "smooth" });
-        });
-      }
-
-      // ==================== REVIBE EXPRESS SLIDER (Updated IDs) ====================
-      const revibeLaptopPrev = document.getElementById("revibeLaptopPrev");
-      const revibeLaptopالتالي = document.getElementById("revibeLaptopالتالي");
-      const revibeلابتوبSlider = document.getElementById("revibeلابتوبSlider");
-
-      if (revibeLaptopPrev && revibeلابتوبSlider) {
-        revibeLaptopPrev.addEventListener("click", function () {
-          revibeلابتوبSlider.scrollBy({ left: -300, behavior: "smooth" });
-        });
-      }
-
-      if (revibeLaptopالتالي && revibeلابتوبSlider) {
-        revibeLaptopالتالي.addEventListener("click", function () {
-          revibeلابتوبSlider.scrollBy({ left: 300, behavior: "smooth" });
         });
       }
 
