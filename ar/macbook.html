@@ -1,0 +1,1406 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="lang-ar">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>لابتوب - Theme 5</title>
+ <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.rtl.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../products.css" />
+    <link rel="stylesheet" href="../responsive-fixes.css" />
+    <style>
+      .show-dropdown {
+        opacity: 1 !important;
+        visibility: visible !important;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- -----------------------Header------------------------- -->
+    <div class="container-fluid mb-5">
+      <div class="row">
+        <div class="top-mesage-countdown text-center">
+            <span class="free_del_top"
+            ><a href="#" id="re_announcement-bar"
+              >احصل على خصم 100 درهم على طلبك باستخدام الكود CYBERMONDAY واستمتع
+              بـ 200 درهم استرجاع نقدي!</a
+            ></span
+          >
+        </div>
+      </div>
+    </div>
+    <!-- ---------------------NavBar---------------------------- -->
+    <nav class="navbar navbar-expand-lg position-relative py-3">
+      <div
+        class="container-fluid d-flex align-items-center justify-content-between"
+      >
+        <!-- Mobile: Toggle Button on Left -->
+        <button class="nav-toggle-btn d-lg-none" id="navToggle">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Mobile: Language Dropdown -->
+        <div class="dropdown language-dropdown order-lg-3">
+          <button class="lang-btn" type="button" data-bs-toggle="dropdown">
+            <img src="https://flagsapi.com/GB/flat/16.png" class="flag-icon" />
+            EN
+          </button>
+
+          <ul class="dropdown-menu lang-menu">
+            <li>
+              <a
+                class="dropdown-item lang-item"
+                href="../macbook.html"
+                data-set-lang="en"
+              >
+                <img
+                  src="https://flagsapi.com/GB/flat/16.png"
+                  class="flag-icon"
+                />
+                EN
+              </a>
+            </li>
+            <li>
+              <a
+                class="dropdown-item lang-item"
+                href="macbook.html"
+                data-set-lang="ar"
+              >
+                <img
+                  src="https://flagsapi.com/AE/flat/16.png"
+                  class="flag-icon"
+                />
+                AR
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Logo in Center -->
+        <a class="navbar-img mx-auto" href="#"
+          ><img src="images/navbar-logo.png" alt="Logo"
+        /></a>
+
+        <!-- Desktop Search Bar -->
+        <div class="desktop-search-wrapper order-lg-1 w-100 d-none d-lg-block">
+          <form class="d-flex mx-auto position-relative" role="search">
+            <input
+              class="form-control nav-search"
+              type="search"
+              placeholder="ما الذي تبحث عنه"
+            />
+            <span class="search-icon"><i class="fas fa-search"></i></span>
+          </form>
+        </div>
+
+        <!-- Icons on Right -->
+        <div class="d-flex ms-auto nav-icons order-lg-4">
+          <a href="#"><i class="fas fa-user"></i></a>
+          <a href="#"><i class="fas fa-heart"></i></a>
+          <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+      </div>
+
+      <!-- Mobile: Search Bar at Bottom (Full Width) -->
+      <div class="mobile-search-wrapper d-lg-none w-100 mt-3">
+        <form class="d-flex position-relative" role="search">
+          <input
+            class="form-control nav-search w-100"
+            type="search"
+            placeholder="ما الذي تبحث عنه"
+          />
+          <span class="search-icon"><i class="fas fa-search"></i></span>
+        </form>
+      </div>
+    </nav>
+    <hr class="m-0" />
+    <!-- ----------- main Navbar Links Section ----------- -->
+    <!-- Sidebar for Mobile -->
+    <div class="sidebar" id="navSidebar">
+      <div class="sidebar-header">
+        <h5>القائمة</h5>
+        <button class="sidebar-close" id="sidebarClose">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <ul class="sidebar-nav-links">
+        <li class="sidebar-nav-item">
+          <a href="index.html" class="sidebar-nav-link">سايبر مانداي</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a href="iphone.html" class="sidebar-nav-link">آيفون</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a href="#" class="sidebar-nav-link">سامسونج</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a href="macbook.html" class="sidebar-nav-link">ماك بوك</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a href="laptop.html" class="sidebar-nav-link active">لابتوب</a>
+        </li>
+        <!-- Dropdown Items -->
+        <li class="sidebar-nav-item sidebar-dropdown">
+          <a href="#" class="sidebar-nav-link sidebar-dropdown-toggle"
+            >آيباد <i class="fas fa-chevron-down"></i
+          ></a>
+          <ul class="sidebar-dropdown-menu">
+            <li><a href="#">وصل حديثاً</a></li>
+            <li><a href="#">الأكثر مبيعاً</a></li>
+            <li><a href="#">عروض الخصم</a></li>
+          </ul>
+        </li>
+        <li class="sidebar-nav-item sidebar-dropdown">
+          <a href="#" class="sidebar-nav-link sidebar-dropdown-toggle"
+            >تلفزيونات <i class="fas fa-chevron-down"></i
+          ></a>
+          <ul class="sidebar-dropdown-menu">
+            <li><a href="#">مكياج</a></li>
+            <li><a href="#">العناية بالبشرة</a></li>
+            <li><a href="#">عطور</a></li>
+          </ul>
+        </li>
+        <li class="sidebar-nav-item sidebar-dropdown">
+          <a href="#" class="sidebar-nav-link sidebar-dropdown-toggle"
+            >إكسسوارات وصوتيات <i class="fas fa-chevron-down"></i
+          ></a>
+          <ul class="sidebar-dropdown-menu">
+            <li><a href="#">مكياج</a></li>
+            <li><a href="#">العناية بالبشرة</a></li>
+            <li><a href="#">عطور</a></li>
+          </ul>
+        </li>
+        <li class="sidebar-nav-item sidebar-dropdown">
+          <a href="#" class="sidebar-nav-link sidebar-dropdown-toggle"
+            >ساعات آبل <i class="fas fa-chevron-down"></i
+          ></a>
+          <ul class="sidebar-dropdown-menu">
+            <li><a href="#">مكياج</a></li>
+            <li><a href="#">العناية بالبشرة</a></li>
+            <li><a href="#">عطور</a></li>
+          </ul>
+        </li>
+        <li class="sidebar-nav-item sidebar-dropdown">
+          <a href="#" class="sidebar-nav-link sidebar-dropdown-toggle"
+            >للأعمال <i class="fas fa-chevron-down"></i
+          ></a>
+          <ul class="sidebar-dropdown-menu">
+            <li><a href="#">مكياج</a></li>
+            <li><a href="#">العناية بالبشرة</a></li>
+            <li><a href="#">عطور</a></li>
+          </ul>
+        </li>
+        <li class="sidebar-nav-item">
+          <a href="#" class="sidebar-nav-link">ريفايب إكسبرس</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Sidebar Overlay -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Desktop Navigation -->
+    <nav class="main-nav">
+      <ul class="nav-links-container">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link-custom">سايبر مانداي</a>
+        </li>
+        <li class="nav-item">
+          <a href="iphone.html" class="nav-link-custom">آيفون</a>
+        </li>
+        <li class="nav-item">
+          <a href="samsung.html" class="nav-link-custom">سامسونج</a>
+        </li>
+        <li class="nav-item">
+          <a href="macbook.html" class="nav-link-custom active">ماك بوك</a>
+        </li>
+        <li class="nav-item">
+          <a href="laptop.html" class="nav-link-custom">لابتوب</a>
+        </li>
+        <!-- ---------- Dropdown Item 1 ---------- -->
+        <li class="nav-item dropdown-custom">
+          <a href="ipad.html" class="nav-link-custom dropdown-toggle-custom"
+            >آيباد</a
+          >
+          <ul class="dropdown-menu-custom">
+            <li><a href="ipad.html">وصل حديثاً</a></li>
+            <li><a href="ipad.html">الأكثر مبيعاً</a></li>
+            <li><a href="ipad.html">عروض الخصم</a></li>
+          </ul>
+        </li>
+        <!-- ---------- Dropdown Item 2 ---------- -->
+        <li class="nav-item dropdown-custom">
+          <a href="tv.html" class="nav-link-custom dropdown-toggle-custom"
+            >تلفزيونات</a
+          >
+          <ul class="dropdown-menu-custom">
+            <li><a href="tv.html">مكياج</a></li>
+            <li><a href="tv.html">العناية بالبشرة</a></li>
+            <li><a href="tv.html">عطور</a></li>
+          </ul>
+        </li>
+        <!-- ---------- Dropdown Item 3 ---------- -->
+        <li class="nav-item dropdown-custom">
+          <a
+            href="accessiories.html"
+            class="nav-link-custom dropdown-toggle-custom"
+            >إكسسوارات وصوتيات</a
+          >
+          <ul class="dropdown-menu-custom">
+            <li><a href="accessiories.html">مكياج</a></li>
+            <li><a href="accessiories.html">العناية بالبشرة</a></li>
+            <li><a href="accessiories.html">عطور</a></li>
+          </ul>
+        </li>
+        <!-- ---------- Dropdown Item 4 ---------- -->
+        <li class="nav-item dropdown-custom">
+          <a
+            href="apple-watch.html"
+            class="nav-link-custom dropdown-toggle-custom"
+            >ساعات آبل</a
+          >
+          <ul class="dropdown-menu-custom">
+            <li><a href="apple-watch.html">مكياج</a></li>
+            <li><a href="apple-watch.html">العناية بالبشرة</a></li>
+            <li><a href="apple-watch.html">عطور</a></li>
+          </ul>
+        </li>
+        <!-- ---------- Dropdown Item 5 ---------- -->
+        <li class="nav-item dropdown-custom">
+          <a href="#" class="nav-link-custom dropdown-toggle-custom"
+            >للأعمال</a
+          >
+          <ul class="dropdown-menu-custom">
+            <li><a href="#">مكياج</a></li>
+            <li><a href="#">العناية بالبشرة</a></li>
+            <li><a href="#">عطور</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link-custom">ريفايب إكسبرس</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- HERO BANNER SECTION -->
+    <section class="iphone-hero-banner mt-4 mb-4">
+      <div class="container-fluid px-5">
+        <div class="row g-0">
+          <!-- Left Side - Dark Background with Content -->
+          <div class="col-lg-8 col-md-12">
+            <div class="hero-content-wrappers">
+              <h1 class="hero-title">
+                مجدد معتمد
+                <span class="apple-span-color">ماك بوك</span>
+              </h1>
+              <p class="hero-subtitle">
+                أجهزة مجددة معتمدة - تم فحصها من قبل الخبراء - أرخص بنسبة تصل إلى 70% من الجديد
+              </p>
+
+              <div class="custom-banner-wrapper">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-lg-7 col-md-12 col-sm-12">
+                      <div class="row">
+                        <div class="col-md-4 col-sm-3">
+                          <div class="d-flex align-items-center gap-1">
+                            <img
+                              src="images/Group_80d143d0-6808-468c-8ace-4bf45163231a (1).svg"
+                              alt="توصيل مجاني"
+                              class="icon"
+                            />
+                            <p class="mb-0 banner-texts text-white">
+                              توصيل مجاني
+                            </p>
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-sm-3">
+                          <div class="d-flex align-items-center gap-1">
+                            <img
+                              src="images/9._Return.png"
+                              alt="10 أيام للإرجاع"
+                              class="icon"
+                            />
+                            <p class="mb-0 banner-texts text-white">
+                              10 أيام للإرجاع
+                            </p>
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-sm-3">
+                          <div class="d-flex align-items-center gap-1">
+                            <img
+                              src="images/Vector.png"
+                              alt="ضمان 12 شهر"
+                              class="icon"
+                            />
+                            <p class="mb-0 banner-texts text-white">
+                              ضمان 12 شهر
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12 col-sm-12">
+                      <div class="row">
+                        <div class="col-md-4 col-sm-3">
+                          <p class="mb-0 banner-texts text-white">
+                            اشتر الآن، ادفع لاحقاً
+                          </p>
+                        </div>
+                        <div class="col-md-4 col-sm-3">
+                          <img
+                            src="images/banner-bottom-1.avif"
+                            class="img-fluid-banner"
+                            alt="Trust Image 1"
+                          />
+                        </div>
+                        <div class="col-md-4 col-sm-3">
+                          <img
+                            src="images/banner-bottom-2.avif"
+                            class="img-fluid-banner"
+                            alt="Trust Image 2"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Side - Gradient Background with Laptop Image -->
+          <div class="col-lg-4 col-md-12">
+            <div class="hero-image-wrappers">
+              <div class="hero-gradient-bg"></div>
+              <div class="hero-iphones">
+                <img
+                  src="images/Group_147.avif"
+                  alt="Laptop"
+                  class="hero-iphone hero-iphone-1"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PRODUCT LISTING SECTION ====================  -->
+    <section class="product-listing-wrapper">
+      <div class="container-fluid px-5">
+        <div class="row">
+          <!-- LEFT SIDEBAR - FILTERS -->
+          <div class="col-lg-3 col-md-12">
+            <div class="product-sidebar">
+              <!-- السعر Range تصفية -->
+              <div class="filter-section">
+                <h3 class="filter-title">السعر</h3>
+                <div class="price-range-wrapper">
+                  <div class="price-range-slider-container">
+                    <input
+                      type="range"
+                      min="0"
+                      max="8000"
+                      value="0"
+                      class="price-range-min"
+                      id="priceأدنى"
+                    />
+                    <input
+                      type="range"
+                      min="0"
+                      max="8000"
+                      value="8000"
+                      class="price-range-max"
+                      id="priceأقصى"
+                    />
+                  </div>
+                  <div class="price-range-values">
+                    <div class="price-range-value-box">
+                      <span class="price-label">أدنى</span>
+                      <span class="price-value" id="priceأدنىValue">AED 0</span>
+                    </div>
+                    <span class="price-separator">-</span>
+                    <div class="price-range-value-box">
+                      <span class="price-label">أقصى</span>
+                      <span class="price-value" id="priceأقصىValue"
+                        >AED 8000</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- العلامة التجارية تصفية -->
+              <div class="filter-section">
+                <h3 class="filter-title">العلامة التجارية</h3>
+                <div class="brand-checkbox-group">
+                  <div class="brand-checkbox-item">
+                    <input
+                      type="checkbox"
+                      id="brand-dell"
+                      class="brand-checkbox filter-checkbox"
+                      checked
+                    />
+                    <label for="brand-dell" class="brand-label">ديل</label>
+                  </div>
+                  <div class="brand-checkbox-item">
+                    <input
+                      type="checkbox"
+                      id="brand-hp"
+                      class="brand-checkbox filter-checkbox"
+                    />
+                    <label for="brand-hp" class="brand-label">إتش بي</label>
+                  </div>
+                  <div class="brand-checkbox-item">
+                    <input
+                      type="checkbox"
+                      id="brand-lenovo"
+                      class="brand-checkbox filter-checkbox"
+                    />
+                    <label for="brand-lenovo" class="brand-label">لينوفو</label>
+                  </div>
+                  <div class="brand-checkbox-item">
+                    <input
+                      type="checkbox"
+                      id="brand-asus"
+                      class="brand-checkbox filter-checkbox"
+                    />
+                    <label for="brand-asus" class="brand-label">أسوس</label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Generation تصفية -->
+              <div class="filter-section">
+                <h3 class="filter-title">Generation</h3>
+                <div class="storage-options">
+                  <div class="storage-checkbox-item">
+                    <input
+                      type="checkbox"
+                      id="gen-i5"
+                      class="storage-checkbox filter-checkbox"
+                    />
+                    <label for="gen-i5" class="storage-label">إنتل i5</label>
+                  </div>
+                  <div class="storage-checkbox-item">
+                    <input
+                      type="checkbox"
+                      id="gen-i7"
+                      class="storage-checkbox filter-checkbox"
+                      checked
+                    />
+                    <label for="gen-i7" class="storage-label">إنتل i7</label>
+                  </div>
+                  <div class="storage-checkbox-item">
+                    <input
+                      type="checkbox"
+                      id="gen-i9"
+                      class="storage-checkbox filter-checkbox"
+                    />
+                    <label for="gen-i9" class="storage-label">إنتل i9</label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Screen Size تصفية -->
+              <div class="filter-section">
+                <h3 class="filter-title">Screen Size</h3>
+                <div class="storage-options">
+                  <div class="storage-checkbox-item">
+                    <input
+                      type="checkbox"
+                      id="screen-13"
+                      class="storage-checkbox filter-checkbox"
+                    />
+                    <label for="screen-13" class="storage-label">13"</label>
+                  </div>
+                  <div class="storage-checkbox-item">
+                    <input
+                      type="checkbox"
+                      id="screen-14"
+                      class="storage-checkbox filter-checkbox"
+                    />
+                    <label for="screen-14" class="storage-label">14"</label>
+                  </div>
+                  <div class="storage-checkbox-item">
+                    <input
+                      type="checkbox"
+                      id="screen-15"
+                      class="storage-checkbox filter-checkbox"
+                      checked
+                    />
+                    <label for="screen-15" class="storage-label">15.6"</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT CONTENT - PRODUCT GRID -->
+          <div class="col-lg-9 col-md-12">
+            <div class="renewed-section mt-1">
+              <div class="container">
+                <div class="row">
+                  <div
+                    class="d-flex align-items-center justify-content-center gap-2"
+                  >
+                    <i class="fas fa-exclamation-circle"></i>
+                    <p class="">
+                      What is <span class="renewd-span">Renewed</span> from
+                      Revibe?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="products-grid-container">
+              <!-- Grid Header -->
+              <div class="products-grid-header">
+                <div class="products-count">
+                  <span id="productCount">24</span> منتج موجود
+                </div>
+                <div class="products-controls">
+                  <label for="itemsPerPage" class="items-per-page-label"
+                    >عنصر لكل صفحة:</label
+                  >
+                  <select id="itemsPerPage" class="items-per-page-select">
+                    <option value="12">12</option>
+                    <option value="24" selected>24</option>
+                    <option value="36">36</option>
+                    <option value="48">48</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Products Grid -->
+              <div class="products-grid">
+                <!-- Laptop Card 1 -->
+                <div
+                  class="product-grid-card"
+                  data-brand="dell"
+                  data-gen="i7"
+                  data-screen="15"
+                >
+                  <div class="product-card-image-wrapper">
+                    <button class="product-wishlist-btn">
+                      <i class="far fa-heart"></i>
+                    </button>
+                    <img
+                      class="product-main-image"
+                      src="images/Frame_15_-_2024-06-26T143807.110_470x.webp"
+                      alt="ديل Laptop"
+                    />
+                  </div>
+                  <div class="product-card-info">
+                    <h3 class="product-card-title">
+                      ديل Inspiron 15 إنتل i7
+                    </h3>
+                    <div class="product-card-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <p class="product-card-specs">
+                      إنتل i7 - 15.6" Display - 512GB SSD
+                    </p>
+                    <div class="product-card-price-wrapper">
+                      <div class="product-card-price">AED 2,499</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Laptop Card 2 -->
+                <div
+                  class="product-grid-card"
+                  data-brand="hp"
+                  data-gen="i5"
+                  data-screen="14"
+                >
+                  <div class="product-card-image-wrapper">
+                    <button class="product-wishlist-btn">
+                      <i class="far fa-heart"></i>
+                    </button>
+                    <img
+                      class="product-main-image"
+                      src="images/Frame_15_-_2024-06-26T144305.604_470x.webp"
+                      alt="إتش بي Laptop"
+                    />
+                  </div>
+                  <div class="product-card-info">
+                    <h3 class="product-card-title">إتش بي Pavilion 14 إنتل i5</h3>
+                    <div class="product-card-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <p class="product-card-specs">
+                      إنتل i5 - 14" Display - 256GB SSD
+                    </p>
+                    <div class="product-card-price-wrapper">
+                      <div class="product-card-price">AED 1,899</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Add more laptop cards here (similar structure) -->
+                <!-- Laptop Card 3 -->
+                <div
+                  class="product-grid-card"
+                  data-brand="lenovo"
+                  data-gen="i7"
+                  data-screen="15"
+                >
+                  <div class="product-card-image-wrapper">
+                    <button class="product-wishlist-btn">
+                      <i class="far fa-heart"></i>
+                    </button>
+                    <img
+                      class="product-main-image"
+                      src="images/Frame_15_2_51714a98-77f3-4330-a941-019328b89827_470x.webp"
+                      alt="لينوفو Laptop"
+                    />
+                  </div>
+                  <div class="product-card-info">
+                    <h3 class="product-card-title">لينوفو ThinkPad إنتل i7</h3>
+                    <div class="product-card-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="product-card-specs">
+                      إنتل i7 - 15.6" Display - 1 تيرابايت SSD
+                    </p>
+                    <div class="product-card-price-wrapper">
+                      <div class="product-card-price">AED 3,299</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Laptop Card 4 -->
+                <div
+                  class="product-grid-card"
+                  data-brand="asus"
+                  data-gen="i9"
+                  data-screen="15"
+                >
+                  <div class="product-card-image-wrapper">
+                    <button class="product-wishlist-btn">
+                      <i class="far fa-heart"></i>
+                    </button>
+                    <img
+                      class="product-main-image"
+                      src="images/laptop-banner.webp"
+                      alt="أسوس Laptop"
+                    />
+                  </div>
+                  <div class="product-card-info">
+                    <h3 class="product-card-title">أسوس ROG إنتل i9</h3>
+                    <div class="product-card-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <p class="product-card-specs">
+                      إنتل i9 - 15.6" Display - 1 تيرابايت SSD - RTX 3070
+                    </p>
+                    <div class="product-card-price-wrapper">
+                      <div class="product-card-price">AED 5,999</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Laptop Card 5 -->
+                <div
+                  class="product-grid-card"
+                  data-brand="dell"
+                  data-gen="i5"
+                  data-screen="13"
+                >
+                  <div class="product-card-image-wrapper">
+                    <button class="product-wishlist-btn">
+                      <i class="far fa-heart"></i>
+                    </button>
+                    <img
+                      class="product-main-image"
+                      src="images/Frame_15_7fbff5dd-ea11-4954-9011-eebe96d61c16_470x.webp"
+                      alt="ديل XPS"
+                    />
+                  </div>
+                  <div class="product-card-info">
+                    <h3 class="product-card-title">ديل XPS 13 إنتل i5</h3>
+                    <div class="product-card-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <p class="product-card-specs">
+                      إنتل i5 - 13" Display - 512GB SSD
+                    </p>
+                    <div class="product-card-price-wrapper">
+                      <div class="product-card-price">AED 3,499</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Laptop Card 6 -->
+                <div
+                  class="product-grid-card"
+                  data-brand="hp"
+                  data-gen="i7"
+                  data-screen="15"
+                >
+                  <div class="product-card-image-wrapper">
+                    <button class="product-wishlist-btn">
+                      <i class="far fa-heart"></i>
+                    </button>
+                    <img
+                      class="product-main-image"
+                      src="images/Frame_15_-_2024-06-26T143807.110_470x.webp"
+                      alt="إتش بي Envy"
+                    />
+                  </div>
+                  <div class="product-card-info">
+                    <h3 class="product-card-title">إتش بي Envy 15 إنتل i7</h3>
+                    <div class="product-card-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <p class="product-card-specs">
+                      إنتل i7 - 15.6" Display - 512GB SSD
+                    </p>
+                    <div class="product-card-price-wrapper">
+                      <div class="product-card-price">AED 2,899</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Laptop Card 7 -->
+                <div
+                  class="product-grid-card"
+                  data-brand="lenovo"
+                  data-gen="i5"
+                  data-screen="14"
+                >
+                  <div class="product-card-image-wrapper">
+                    <button class="product-wishlist-btn">
+                      <i class="far fa-heart"></i>
+                    </button>
+                    <img
+                      class="product-main-image"
+                      src="images/Frame_15_2_51714a98-77f3-4330-a941-019328b89827_470x.webp"
+                      alt="لينوفو IdeaPad"
+                    />
+                  </div>
+                  <div class="product-card-info">
+                    <h3 class="product-card-title">لينوفو IdeaPad 14</h3>
+                    <div class="product-card-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <p class="product-card-specs">
+                      إنتل i5 - 14" Display - 256GB SSD
+                    </p>
+                    <div class="product-card-price-wrapper">
+                      <div class="product-card-price">AED 1,699</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Laptop Card 8 -->
+                <div
+                  class="product-grid-card"
+                  data-brand="asus"
+                  data-gen="i7"
+                  data-screen="15"
+                >
+                  <div class="product-card-image-wrapper">
+                    <button class="product-wishlist-btn">
+                      <i class="far fa-heart"></i>
+                    </button>
+                    <img
+                      class="product-main-image"
+                      src="images/Frame_15_75d0f2b9-3f5c-4164-9c42-2fdaf70ccb55_470x.webp"
+                      alt="أسوس TUF"
+                    />
+                  </div>
+                  <div class="product-card-info">
+                    <h3 class="product-card-title">أسوس TUF Gaming i7</h3>
+                    <div class="product-card-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="product-card-specs">
+                      إنتل i7 - 15.6" Display - 512GB SSD - RTX 3060
+                    </p>
+                    <div class="product-card-price-wrapper">
+                      <div class="product-card-price">AED 4,299</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Pagination -->
+              <div class="pagination-wrapper">
+                <nav aria-label="Product pagination">
+                  <ul class="pagination" id="productPagination">
+                    <li class="page-item disabled">
+                      <a class="page-link" href="#" tabindex="-1">
+                        <i class="fas fa-chevron-left"></i>
+                      </a>
+                    </li>
+                    <li class="page-item active">
+                      <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">
+                        <i class="fas fa-chevron-right"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------top footer ----------------------- -->
+     <div class="banner-bottom-wrapper py-3">
+      <div class="banner-bottom-wrapper-1">
+        <div class="banner-bottom-wrapper-2">
+          <div>
+            <img
+              src="images/delivery-icon.svg"
+              alt="Free Delivery"
+              class="icon"
+            />
+          </div>
+          <div><h6 class="mb-0">توصيل مجاني</h6></div>
+        </div>
+        <div class="banner-bottom-wrapper-2">
+          <div>
+            <img
+              src="images/return-icon.svg"
+              alt="10 Days To Return"
+              class="icon"
+            />
+          </div>
+          <div> <h6 class="mb-0">10 أيام للإرجاع</h6></div>
+        </div>
+        <div class="banner-bottom-wrapper-2">
+          <div>
+            <img
+              src="images/warranty-icon.svg"
+              alt="12 Months Warranty"
+              class="icon"
+            />
+          </div>
+          <div>  <h6 class="mb-0">ضمان 12 شهر</h6></div>
+        </div>
+      </div>
+      <div class="banner-bottom-wrapper-3">
+        <div> <p class="mb-0">اشتر الآن، ادفع لاحقاً</p></div>
+        <div>
+          <img
+            src="images/banner-bottom-1.avif"
+            class="img-fluid-banner"
+            alt="Trust Image 1"
+          />
+        </div>
+        <div>
+          <img
+            src="images/banner-bottom-2.avif"
+            class="img-fluid-banner"
+            alt="Trust Image 2"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- ------------------Footer Sections------------------------------ -->
+<footer class="new-footer">
+  <div class="container-fluid px-5">
+    <div class="row">
+      <!-- Column 1: Company Info -->
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+        <div class="footer-logo mb-3">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0695/1737/7855/files/Full_logo_-_white-cropped.svg?v=1725347566"
+            alt="Revibe"
+            class="footer-logo-img"
+          />
+        </div>
+        <p class="footer-company-desc">
+          شركة ريفايف تكنولوجي FZ-LLC هي شركة مسجلة ومرخّصة من قبل
+          هيئة تطوير دبي.
+        </p>
+      </div>
+
+      <!-- Column 2: About Us -->
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+        <h3 class="footer-column-title">معلومات عنا</h3>
+        <ul class="footer-links-list">
+          <li><a href="#">حول ريفايف</a></li>
+          <li><a href="#">المتجر</a></li>
+          <li><a href="#">مدونتنا</a></li>
+          <li><a href="#">كن بائعًا</a></li>
+          <li><a href="#">تقييمات ريفايف</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Informations -->
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+        <h3 class="footer-column-title">معلومات</h3>
+        <ul class="footer-links-list">
+          <li><a href="#">مركز المساعدة والأسئلة الشائعة</a></li>
+          <li><a href="#">اتصل بنا</a></li>
+          <li><a href="#">الشروط والأحكام</a></li>
+          <li><a href="#">السياسة القانونية</a></li>
+        </ul>
+
+        <div class="footer-payment-icons mt-3">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg"
+            alt="Visa"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg"
+            alt="Mastercard"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Apple_Pay_logo.svg"
+            alt="Apple Pay"
+          />
+          <img
+            src="https://cdn.shopify.com/s/files/1/0695/1737/7855/files/tabby-logo-icon.png"
+            alt="Tabby"
+          />
+          <img
+            src="https://cdn.shopify.com/s/files/1/0695/1737/7855/files/tamara-logo-footer.png?v=1695192468"
+            alt="Tamara"
+          />
+          <img
+            src="https://cdn.shopify.com/s/files/1/0695/1737/7855/files/norton-sec-logo.png"
+            alt="Norton"
+          />
+        </div>
+      </div>
+
+      <!-- Column 4: My Account & Contact -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <h3 class="footer-column-title">حسابي</h3>
+        <ul class="footer-links-list">
+          <li><a href="#">حسابي</a></li>
+          <li><a href="#">تتبع طلبك</a></li>
+          <li><a href="#">رفع شكوى</a></li>
+          <li><a href="#">تتبع شكواك</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-3">
+        <a href="#" class="btn-sell-device">بيع جهازك</a>
+        <div class="footer-address mt-4">
+          <p class="mb-1">
+            شارع الملك سلمان بن عبدالعزيز آل سعود، مدينة دبي للإنترنت - دبي - الإمارات العربية المتحدة
+          </p>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="footer-contact-section mt-4">
+          <h3 class="footer-column-title">اتصل بنا</h3>
+          <p class="footer-contact-item">
+            <a href="mailto:contact@revibe.me">contact@revibe.me</a>
+          </p>
+          <p class="footer-contact-item">
+            <a href="tel:+97144597000">+971 4 459 7000</a>
+          </p>
+          <p class="footer-reply-time">(يتم الرد خلال يوم عمل واحد)</p>
+          <p class="footer-hours">
+            من الاثنين إلى الجمعة من 9:30 صباحًا إلى 5:30 مساءً
+          </p>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="footer-contact-section mt-4">
+          <p class="footer-reply-time">(يتم الرد خلال يوم عمل واحد)</p>
+          <p class="footer-hours">
+            من الاثنين إلى الجمعة من 9:30 صباحًا إلى 5:30 مساءً
+          </p>
+          <a href="#" class="footer-chat-link">تحدث معنا</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+    <div class="container-fluid px-5">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-6 text-center text-md-start mb-3 mb-md-0">
+          <p class="footer-copyright mb-0">
+            © 2025 ريفايف — جميع الحقوق محفوظة
+          </p>
+        </div>
+        <div class="col-12 col-md-6 text-center text-md-end">
+          <div class="footer-social-icons">
+            <div class="social-icon">
+              <a
+                href="https://www.facebook.com/RevibeUAE"
+                target="_blank"
+                class="social-icon-icon"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </div>
+            <div class="social-icon">
+              <a
+                href="https://www.instagram.com/revibe_me/"
+                target="_blank"
+                class="social-icon-icon"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.querySelectorAll(".dropdown-toggle-custom").forEach((item) => {
+        item.addEventListener("click", function (e) {
+          e.preventDefault();
+          let menu = this.nextElementSibling;
+          menu.classList.toggle("show-dropdown");
+        });
+      });
+
+      // Sidebar functionality
+      const navToggle = document.getElementById("navToggle");
+      const sidebar = document.getElementById("navSidebar");
+      const sidebarClose = document.getElementById("sidebarClose");
+      const sidebarOverlay = document.getElementById("sidebarOverlay");
+
+      // Open sidebar
+      if (navToggle) {
+        navToggle.addEventListener("click", function () {
+          sidebar.classList.add("active");
+          sidebarOverlay.classList.add("active");
+          document.body.style.overflow = "hidden";
+        });
+      }
+
+      // Close sidebar
+      function closeSidebar() {
+        sidebar.classList.remove("active");
+        sidebarOverlay.classList.remove("active");
+        document.body.style.overflow = "";
+      }
+
+      if (sidebarClose) {
+        sidebarClose.addEventListener("click", closeSidebar);
+      }
+
+      if (sidebarOverlay) {
+        sidebarOverlay.addEventListener("click", closeSidebar);
+      }
+
+      // Sidebar dropdown functionality
+      document
+        .querySelectorAll(".sidebar-dropdown-toggle")
+        .forEach((toggle) => {
+          toggle.addEventListener("click", function (e) {
+            e.preventDefault();
+            const parent = this.parentElement;
+            const isActive = parent.classList.contains("active");
+
+            // Close all other dropdowns
+            document.querySelectorAll(".sidebar-dropdown").forEach((item) => {
+              item.classList.remove("active");
+            });
+
+            // Toggle current dropdown
+            if (!isActive) {
+              parent.classList.add("active");
+            }
+          });
+        });
+
+      // ==================== PRODUCT FILTERING SYSTEM ====================
+      let allProducts = [];
+      let filteredProducts = [];
+      let currentPage = 1;
+      let itemsPerPage = 24;
+
+      // Initialize products array
+      function initializeProducts() {
+        allProducts = Array.from(
+          document.querySelectorAll(".product-grid-card")
+        ).map((card) => {
+          return {
+            element: card,
+            brand: card.getAttribute("data-brand") || "",
+            gen: card.getAttribute("data-gen") || "",
+            screen: card.getAttribute("data-screen") || "",
+            price: parseInt(
+              card
+                .querySelector(".product-card-price")
+                ?.textContent.replace(/[^0-9]/g, "") || "0"
+            ),
+          };
+        });
+        filteredProducts = [...allProducts];
+      }
+
+      // Apply all filters
+      function applyFilters() {
+        // Get active brand filters
+        const activeBrands = Array.from(
+          document.querySelectorAll(".brand-checkbox:checked")
+        ).map((cb) => cb.id.replace("brand-", ""));
+
+        // Get active generation filters
+        const activeGens = Array.from(
+          document.querySelectorAll(
+            "#gen-i5:checked, #gen-i7:checked, #gen-i9:checked"
+          )
+        ).map((cb) => cb.id.replace("gen-", ""));
+
+        // Get active screen filters
+        const activeScreens = Array.from(
+          document.querySelectorAll(
+            "#screen-13:checked, #screen-14:checked, #screen-15:checked"
+          )
+        ).map((cb) => cb.id.replace("screen-", ""));
+
+        // Get price range
+        const minPrice = parseInt(document.getElementById("priceMin").value);
+        const maxPrice = parseInt(document.getElementById("priceMax").value);
+
+        // Filter products
+        filteredProducts = allProducts.filter((product) => {
+          // Brand filter
+          const brandMatch =
+            activeBrands.length === 0 || activeBrands.includes(product.brand);
+
+          // Generation filter
+          const genMatch =
+            activeGens.length === 0 || activeGens.includes(product.gen);
+
+          // Screen filter
+          const screenMatch =
+            activeScreens.length === 0 ||
+            activeScreens.includes(product.screen);
+
+          // Price filter
+          const priceMatch =
+            product.price >= minPrice && product.price <= maxPrice;
+
+          return brandMatch && genMatch && screenMatch && priceMatch;
+        });
+
+        updateProductDisplay();
+        updatePagination();
+      }
+
+      // Update product display based on current page
+      function updateProductDisplay() {
+        const startIndex = (currentPage - 1) * itemsPerPage;
+        const endIndex = startIndex + itemsPerPage;
+
+        allProducts.forEach((product) => {
+          product.element.style.display = "none";
+        });
+
+        filteredProducts.slice(startIndex, endIndex).forEach((product) => {
+          product.element.style.display = "";
+        });
+
+        // Update product count
+        document.getElementById("productCount").textContent =
+          filteredProducts.length;
+      }
+
+      // Update pagination controls
+      function updatePagination() {
+        const totalPages = Math.ceil(filteredProducts.length / itemsPerPage);
+        const pagination = document.getElementById("productPagination");
+
+        if (!pagination) return;
+
+        pagination.innerHTML = "";
+
+        // Previous button
+        const prevLi = document.createElement("li");
+        prevLi.className = `page-item ${currentPage === 1 ? "disabled" : ""}`;
+        prevLi.innerHTML = `<a class="page-link" href="#" data-page="prev"><i class="fas fa-chevron-left"></i></a>`;
+        pagination.appendChild(prevLi);
+
+        // Page numbers
+        for (let i = 1; i <= totalPages; i++) {
+          if (
+            i === 1 ||
+            i === totalPages ||
+            (i >= currentPage - 1 && i <= currentPage + 1)
+          ) {
+            const pageLi = document.createElement("li");
+            pageLi.className = `page-item ${i === currentPage ? "active" : ""}`;
+            pageLi.innerHTML = `<a class="page-link" href="#" data-page="${i}">${i}</a>`;
+            pagination.appendChild(pageLi);
+          } else if (i === currentPage - 2 || i === currentPage + 2) {
+            const dotsLi = document.createElement("li");
+            dotsLi.className = "page-item disabled";
+            dotsLi.innerHTML = `<span class="page-link">...</span>`;
+            pagination.appendChild(dotsLi);
+          }
+        }
+
+        // Next button
+        const nextLi = document.createElement("li");
+        nextLi.className = `page-item ${
+          currentPage === totalPages ? "disabled" : ""
+        }`;
+        nextLi.innerHTML = `<a class="page-link" href="#" data-page="next"><i class="fas fa-chevron-right"></i></a>`;
+        pagination.appendChild(nextLi);
+
+        // Add click handlers
+        pagination.querySelectorAll("a.page-link").forEach((link) => {
+          link.addEventListener("click", function (e) {
+            e.preventDefault();
+            const page = this.getAttribute("data-page");
+
+            if (page === "prev" && currentPage > 1) {
+              currentPage--;
+            } else if (page === "next" && currentPage < totalPages) {
+              currentPage++;
+            } else if (page !== "prev" && page !== "next") {
+              currentPage = parseInt(page);
+            }
+
+            updateProductDisplay();
+            updatePagination();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          });
+        });
+      }
+
+      // Price Range Slider
+      const priceMin = document.getElementById("priceMin");
+      const priceMax = document.getElementById("priceMax");
+      const priceMinValue = document.getElementById("priceMinValue");
+      const priceMaxValue = document.getElementById("priceMaxValue");
+
+      function updatePriceValues() {
+        let minVal = parseInt(priceMin.value);
+        let maxVal = parseInt(priceMax.value);
+
+        if (minVal > maxVal - 100) {
+          if (this === priceMin) {
+            priceMin.value = maxVal - 100;
+            minVal = maxVal - 100;
+          } else {
+            priceMax.value = minVal + 100;
+            maxVal = minVal + 100;
+          }
+        }
+
+        priceMinValue.textContent = `AED ${minVal}`;
+        priceMaxValue.textContent = `AED ${maxVal}`;
+
+        const percentMin = (minVal / 8000) * 100;
+        const percentMax = (maxVal / 8000) * 100;
+
+        priceMin.style.background = `linear-gradient(to right, #ddd ${percentMin}%, #c026d3 ${percentMin}%, #c026d3 ${percentMax}%, #ddd ${percentMax}%)`;
+        priceMax.style.background = `linear-gradient(to right, #ddd ${percentMin}%, #c026d3 ${percentMin}%, #c026d3 ${percentMax}%, #ddd ${percentMax}%)`;
+      }
+
+      priceMin.addEventListener("input", function () {
+        updatePriceValues.call(this);
+        applyFilters();
+      });
+
+      priceMax.addEventListener("input", function () {
+        updatePriceValues.call(this);
+        applyFilters();
+      });
+
+      // Brand filter
+      document.querySelectorAll(".brand-checkbox").forEach((checkbox) => {
+        checkbox.addEventListener("change", function () {
+          currentPage = 1;
+          applyFilters();
+        });
+      });
+
+      // Filter checkboxes
+      document.querySelectorAll(".filter-checkbox").forEach((checkbox) => {
+        checkbox.addEventListener("change", function () {
+          currentPage = 1;
+          applyFilters();
+        });
+      });
+
+      // Items per page
+      document
+        .getElementById("itemsPerPage")
+        .addEventListener("change", function () {
+          itemsPerPage = parseInt(this.value);
+          currentPage = 1;
+          updateProductDisplay();
+          updatePagination();
+        });
+
+      // Initialize on page load
+      document.addEventListener("DOMContentLoaded", function () {
+        initializeProducts();
+        updatePriceValues();
+        updateProductDisplay();
+        updatePagination();
+      });
+    </script>
+  </body>
+</html>
+

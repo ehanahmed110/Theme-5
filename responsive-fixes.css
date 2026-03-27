@@ -1,0 +1,91 @@
+/* ==================== SEARCHBAR FIXES ==================== */
+/* Desktop Search Bar - Center and fix icon positioning */
+.desktop-search-wrapper {
+    max-width: 600px;
+    margin: 0 auto !important;
+}
+
+.desktop-search-wrapper .position-relative {
+    width: 100%;
+}
+
+.desktop-search-wrapper .nav-search {
+    width: 100%;
+    padding-right: 45px !important;
+    /* Make space for icon inside */
+    text-align: left;
+}
+
+.desktop-search-wrapper .search-icon {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    pointer-events: none;
+    z-index: 10;
+}
+
+/* Mobile Search */
+.mobile-search-wrapper .search-icon {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    pointer-events: none;
+}
+
+.mobile-search-wrapper .nav-search {
+    padding-right: 45px !important;
+}
+
+/* ==================== RESPONSIVE IMAGE HIDING ==================== */
+/* Hide images on small and medium screens for better responsiveness */
+
+@media (max-width: 991px) {
+
+    /* Revibe Express Section - Hide product images */
+    #revibeLaptopsSlider .product-card img,
+    #revibeLaptopsSlider .product-image {
+        display: none !important;
+    }
+
+    /* Certified Renewed iPhones Section - Hide product images */
+    .certified-renewed-iphones .product-card img,
+    .certified-renewed-iphones .product-image,
+    .certified-renewed-iphones .iphone-slider img {
+        display: none !important;
+    }
+
+    /* Certified Renewed Laptops Section - Hide product images */
+    #laptopsSlider .product-card img,
+    #laptopsSlider .product-image,
+    .certified-renewed-laptops img.product-image {
+        display: none !important;
+    }
+
+    /* Customer Trust Video Section - Hide animated div and parent */
+    .customer-trust-section .animated-div,
+    .customer-trust-section .animated-div-parent,
+    .video-trust-wrapper .animated-element,
+    .trust-video-container .animated-overlay {
+        display: none !important;
+    }
+
+    /* Adjust product card heights when images are hidden */
+    #revibeLaptopsSlider .product-card,
+    #laptopsSlider .product-card,
+    .certified-renewed-iphones .product-card {
+        min-height: auto !important;
+        padding: 15px !important;
+    }
+}
+
+@media (max-width: 767px) {
+
+    /* Additional hiding for very small screens */
+    .product-card .product-img-wrapper {
+        display: none !important;
+    }
+}
